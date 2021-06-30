@@ -69,4 +69,8 @@ class UserViewController extends Controller
         $row = Links::find($id);
         $row->delete();
     }
+
+    public function settings(){
+        return view('new.settings');
+    }
 }

@@ -23,6 +23,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/admin', [App\Http\Controllers\UserViewController::class, 'index'])->middleware('auth');
 
+Route::get('/admin/settings', [App\Http\Controllers\UserViewController::class, 'settings'])->middleware('auth');
+
 Route::get('/admin/themes', [App\Http\Controllers\UserViewController::class, 'themes'])->middleware('auth');
 
 Route::get('/{username}', [App\Http\Controllers\UserViewController::class, 'viewuser']);
