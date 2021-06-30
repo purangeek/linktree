@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\User;
 use App\Models\Links;
@@ -14,7 +15,13 @@ class UserViewController extends Controller
     public function index(){
         $user_id = Auth::user()->id;
         $links = Links::orderby('id', 'ASC')->where('user_id', $user_id)->get();
-        //return $links;
+        $data = DB::table('users')
+            ->join('links', 'users.id', '=', 'links.user_id')
+            // ->join('sociallinks', 'users.id', '=', 'sociallinks.user_id')
+            // ->join('themes', 'users.id', '=', 'themes.user_id')
+            ->select('users.*', 'links.*')
+            ->get();
+        return $data;
         return view('new.admin')->with('links', $links);
     }
 
