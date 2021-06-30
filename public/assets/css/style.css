@@ -88,6 +88,7 @@ body {
 body,
 html {
     overflow-x: hidden !important;
+    position: relative;
 }
 
 * {
