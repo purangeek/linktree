@@ -22,10 +22,17 @@ class UserViewController extends Controller
         //     ->select('users.*', 'links.*')
         //     ->get();
         // return $data;
+
         return view('new.admin')->with('links', $links);
     }
 
+    
     public function themes(){
+        $user_id = Auth::user()->id;
+        return view('themes');
+    }
+
+    public function themes2(){
         $user_id = Auth::user()->id;
         return view('themes');
     }
