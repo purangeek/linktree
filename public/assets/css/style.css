@@ -2465,7 +2465,7 @@ a:focus {
     width: 100%;
     padding: 10px;
     border-radius: 50px 50px 0 0;
-    background: var(--body-color);
+    background: var(--green-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2509,7 +2509,7 @@ a:focus {
 }
 
 .addlink-more-box ul li a .icon svg {
-    fill: var(--blue-color);
+    fill: var(--green-color);
     transition: var(--transition);
 }
 
