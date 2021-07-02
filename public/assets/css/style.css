@@ -1685,17 +1685,16 @@ a:focus {
     height: 80px;
     display: flex;
     align-items: center;
-    padding: 25px;
+    padding: 8px 25px;
     border: 1px solid var(--white-light-color);
     border-right: none;
     background: var(--white-color);
-    /* position: absolute; */
     width: 100%;
     z-index: 100;
 }
 
 .site-branding {
-    width: 192px;
+    width: 150px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -2090,7 +2089,6 @@ a:focus {
 
 .addlink-boxes-inner {
     height: 100%;
-    padding-bottom: 70px;
 }
 
 .addlink-boxes-wp {
