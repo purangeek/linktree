@@ -3066,7 +3066,7 @@ a:focus {
     display: none;
 }
 
-.add-new-modules-box:before {
+/* .add-new-modules-box:before {
     content: '';
     position: absolute;
     bottom: 100%;
@@ -3075,7 +3075,7 @@ a:focus {
     border-right: 10px solid transparent;
     border-bottom: 15px solid var(--white-color);
     z-index: 1;
-}
+} */
 
 .add-new-modules-row {
     display: grid;
