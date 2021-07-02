@@ -43,7 +43,9 @@ $(document).ready(function() {
 
     // Add New Module JS Start
     $(".add-module-plus-btn").on('click', function() {
-        $(".add-new-module-wp").toggleClass('active');
+        // $(this).toggleClass('active');
+        $(".add-module-item").toggleClass('active');
+        $(".add-new-modules-box").slideToggle(500);
     });
     // Add New Module JS End
 

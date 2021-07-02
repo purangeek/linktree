@@ -169,7 +169,7 @@
                                                 </div>
                                                 <div class="form-input-hover">Hello...</div>
                                             </li>
-                                            <li class="link-item">
+                                            <li class="link-item add-module-item">
                                                 <div class="add-module-plus-btn">
                                                     <i class="fas fa-plus"></i>
                                                 </div>
@@ -188,19 +188,13 @@
                                             <div class="add-new-modules-col">
                                                 <div class="add-new-module">
                                                     <span class="add-new-module-icon"><i class="fas fa-font"></i></span>
-                                                    <span class="add-new-module-text">Add Text</span>
+                                                    <span class="add-new-module-text">Add Heading</span>
                                                 </div>
                                             </div>
                                             <div class="add-new-modules-col">
                                                 <div class="add-new-module">
                                                     <span class="add-new-module-icon"><i class="fas fa-video"></i></span>
                                                     <span class="add-new-module-text">Add Video</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-new-modules-col">
-                                                <div class="add-new-module">
-                                                    <span class="add-new-module-icon"><i class="fas fa-music"></i></span>
-                                                    <span class="add-new-module-text">Add Music</span>
                                                 </div>
                                             </div>
                                             <div class="add-new-modules-col">
