@@ -39,6 +39,11 @@ $(document).ready(function() {
             jQuery(this).parent().addClass('active');
         }
     });
+
+    $(".addlink-more-box-btn").on('click', function() {
+        $(this).toggleClass('active');
+        $(".addlink-more-actions").toggleClass("active");
+    });
     // Addlink JS End
 
     // Add New Module JS Start

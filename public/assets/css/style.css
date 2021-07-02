@@ -2134,9 +2134,15 @@ a:focus {
     border-radius: 4px;
 }
 
-.addlink-box .addlink-right-content {
+.addlink-box .addlink-right-content-wp {
     flex: 1;
-    padding: 20px 20px;
+    padding: 20px 20px 0;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+.addlink-box .addlink-right-content {
     display: flex;
 }
 
@@ -2430,118 +2436,137 @@ a:focus {
     align-items: center;
 }
 
-.addlink-right-content .addlink-more .addlink-more-icon {
-    padding: 0;
+.addlink-more-box-wp {
+    margin-top: 15px;
+    padding: 0 35px 0;
+}
+
+.addlink-more-box-btn {
     border: none;
-    outline: none;
-    background: none;
+    background: var(--green-color);
+    color: var(--white-color);
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    border-radius: 5px 5px 0 0;
+    display: none;
 }
 
-.addlink-right-content .addlink-more .addlink-more-icon svg {
-    fill: var(--dark-color);
+.addlink-more-box-btn i:before {
+    transition: var(--transition);
 }
 
-.addlink-right-content .addlink-more {
-    width: 5px;
+.addlink-more-box {
     position: relative;
-    flex: 0 0 5px;
-}
-
-.addlink-more-popup {
-    position: absolute;
-    top: 0;
-    right: calc(100% + 15px);
-    min-width: 190px;
     width: 100%;
     padding: 10px;
-    background: var(--white-color);
-    box-shadow: var(--box-shadow);
-    border-radius: 5px;
-    border: 1px solid var(--body-color);
-    transition: var(--transition);
-    opacity: 0;
-    pointer-events: none;
-    z-index: 5;
+    border-radius: 50px 50px 0 0;
+    background: var(--body-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 51px;
 }
 
-.addlink-right-content .addlink-more.active .addlink-more-popup {
-    opacity: 1;
-    pointer-events: auto;
+.addlink-more-box ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.addlink-more-popup ul li {
-    margin-bottom: 10px;
+.addlink-more-box ul li {
+    margin-right: 15px;
+    display: inline-block;
 }
 
-.addlink-more-popup ul li:last-child {
-    margin-bottom: 0;
+.addlink-more-box ul li:last-child {
+    margin-right: 0;
 }
 
-.addlink-more-popup ul li a {
+.addlink-more-box ul li a {
     display: inline-flex;
     color: var(--fulldark-color);
     align-items: center;
     font-size: 16px;
 }
 
-.addlink-more-popup ul li a .icon {
+.addlink-more-box ul li a .icon {
     width: 30px;
     height: 30px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    background: rgb(41 83 232 / 40%);
-    margin-right: 10px;
+    background: var(--white-color);
     box-shadow: var(--box-shadow);
     transition: var(--transition);
 }
 
-.addlink-more-popup ul li a:hover .icon {
-    background: var(--blue-color);
-}
-
-.addlink-more-popup ul li a .icon svg {
+.addlink-more-box ul li a .icon svg {
     fill: var(--blue-color);
     transition: var(--transition);
 }
 
-.addlink-more-popup ul li a:hover .icon svg {
-    fill: var(--white-color);
+.addlink-more-box ul li.addlink-delete a .icon svg {
+    fill: var(--red-color);
 }
 
-.addlink-more-popup ul li.addlink-disable a .icon {
+.addlink-more-box-btn.active i:before {
+    content: "\f00d";
+}
+
+.addlink-checkbox {
+    flex: 0 0 auto;
+}
+
+.addlink-box-checkbox-label {
+    margin: 0;
+    display: flex;
+}
+
+.addlink-box-checkbox-input {
+    height: 20px;
+    width: 32px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: var(--transition);
     background: var(--white-light-color);
 }
 
-.addlink-more-popup ul li.addlink-disable a .icon svg {
-    fill: var(--dark-color);
+.addlink-box-checkbox-input:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 0;
+    background: var(--white-color);
+    border-radius: 50%;
+    -webkit-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    transform: translateX(2px);
+    transition: var(--transition);
 }
 
-.addlink-more-popup ul li.addlink-disable a:hover .icon {
-    background: var(--green-color);
+.addlink-box-checkbox-input:checked:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
 }
 
-.addlink-more-popup ul li.addlink-disable a:hover .icon svg {
-    fill: var(--white-color);
+.addlink-box-checkbox-input:checked {
+    background: var(--gradient-color);
 }
-
-.addlink-more-popup ul li.addlink-delete a .icon {
-    background: var(--white-light-color);
-}
-
-.addlink-more-popup ul li.addlink-delete a .icon svg {
-    fill: var(--dark-color);
-}
-
-.addlink-more-popup ul li.addlink-delete a:hover .icon {
-    background: var(--red-color);
-}
-
-.addlink-more-popup ul li.addlink-delete a:hover .icon svg {
-    fill: var(--white-color);
-}
-
 
 /*==========Action Area CSS End==========*/
 
