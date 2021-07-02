@@ -2002,7 +2002,7 @@ a:focus {
     display: inline-block;
     width: 50px;
     height: 50px;
-    flex: 0 0 50px;
+    flex: 0 0 auto;
 }
 
 .link-header-wp ul li {
@@ -2039,6 +2039,7 @@ a:focus {
 .link-header-wp ul li.link-item.active a svg {
     fill: var(--white-color);
 }
+
 
 .link-header-wp ul li.form-item {
     flex: 1;
@@ -2117,7 +2118,7 @@ a:focus {
     width: 20px;
     position: relative;
     border-right: 1px solid var(--white-light-color);
-    flex: 0 0 20px;
+    flex: 0 0 auto;
     cursor: grab;
 }
 
@@ -2148,7 +2149,7 @@ a:focus {
     border-radius: 50%;
     position: relative;
     cursor: pointer;
-    flex: 0 0 50px;
+    flex: 0 0 auto;
     transition: var(--transition);
     margin-right: 15px;
     overflow: hidden;
@@ -3024,10 +3025,14 @@ a:focus {
 
 /*==========Add New Module CSS Start==========*/
 
+.link-header-wp ul li.link-item.add-module-item {
+    width: 60px;
+    height: 60px;
+}
 
 .add-module-plus-btn {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3044,7 +3049,7 @@ a:focus {
     transition: var(--transition);
 }
 
-.add-new-module-wp.active .add-module-plus-btn i {
+.link-header-wp ul li.link-item.add-module-item.active .add-module-plus-btn i {
     transform: rotate(45deg);
 }
 
@@ -3066,7 +3071,7 @@ a:focus {
     right: 15px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 15px solid var(--green-color);
+    border-bottom: 15px solid var(--white-color);
     z-index: 1;
 }
 

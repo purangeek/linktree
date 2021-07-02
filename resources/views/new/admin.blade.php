@@ -191,30 +191,6 @@
                                                     <span class="add-new-module-text">Add Heading</span>
                                                 </div>
                                             </div>
-                                            <div class="add-new-modules-col">
-                                                <div class="add-new-module">
-                                                    <span class="add-new-module-icon"><i class="fas fa-video"></i></span>
-                                                    <span class="add-new-module-text">Add Video</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-new-modules-col">
-                                                <div class="add-new-module">
-                                                    <span class="add-new-module-icon"><i class="fas fa-icons"></i></span>
-                                                    <span class="add-new-module-text">Add Icons</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-new-modules-col">
-                                                <div class="add-new-module">
-                                                    <span class="add-new-module-icon"><i class="fas fa-pen"></i></span>
-                                                    <span class="add-new-module-text">Add Form</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-new-modules-col">
-                                                <div class="add-new-module">
-                                                    <span class="add-new-module-icon"><i class="fas fa-image"></i></span>
-                                                    <span class="add-new-module-text">Add Image</span>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
 

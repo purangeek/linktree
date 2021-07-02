@@ -45,7 +45,7 @@ $(document).ready(function() {
     $(".add-module-plus-btn").on('click', function() {
         // $(this).toggleClass('active');
         $(".add-module-item").toggleClass('active');
-        $(".add-new-modules-box").slideToggle(500);
+        $(".add-new-modules-box").slideToggle("fast");
     });
     // Add New Module JS End
 
