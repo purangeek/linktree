@@ -1881,15 +1881,17 @@ a:focus {
 }
 
 .action-area-wp::-webkit-scrollbar {
-    width: 3px;
+    width: 6px;
 }
 
 .action-area-wp::-webkit-scrollbar-thumb {
-    background: var(--green-color);
+    background: var(--white-light-color);
 }
 
 .action-area-wp::-webkit-scrollbar-track {
-    background: var(--white-light-color);
+    border: 1px solid var(--white-light-color);
+    border-left-width: 2px;
+    background: transparent;
 }
 
 .action-area-wrap {
