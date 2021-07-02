@@ -15,24 +15,19 @@ class UserViewController extends Controller
     public function index(){
         $user_id = Auth::user()->id;
         $links = Links::orderby('id', 'ASC')->where('user_id', $user_id)->get();
-        // $data = DB::table('users')
-        //     ->join('links', 'users.id', '=', 'links.user_id')
-        //     // ->join('sociallinks', 'users.id', '=', 'sociallinks.user_id')
-        //     // ->join('themes', 'users.id', '=', 'themes.user_id')
-        //     ->select('users.*', 'links.*')
-        //     ->get();
-        // return $data;
+        $links = DB::table('users')
+            ->join('links', 'users.id', '=', 'links.user_id')
+            // ->join('sociallinks', 'users.id', '=', 'sociallinks.user_id')
+            // ->join('themes', 'users.id', '=', 'themes.user_id')
+            ->select('users.*', 'links.*')
+            ->get();
+        //return $links;
 
         return view('new.admin')->with('links', $links);
     }
 
     
     public function themes(){
-        $user_id = Auth::user()->id;
-        return view('themes');
-    }
-
-    public function themes2(){
         $user_id = Auth::user()->id;
         return view('themes');
     }
