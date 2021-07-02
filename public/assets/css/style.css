@@ -2003,10 +2003,13 @@ a:focus {
     width: 50px;
     height: 50px;
     flex: 0 0 50px;
+}
+
+.link-header-wp ul li {
     margin-right: 15px;
 }
 
-.link-header-wp ul li.link-item:last-child {
+.link-header-wp ul li:last-child {
     margin-right: 0;
 }
 
@@ -3021,16 +3024,10 @@ a:focus {
 
 /*==========Add New Module CSS Start==========*/
 
-.add-new-module-wp {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
 
 .add-module-plus-btn {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3052,17 +3049,12 @@ a:focus {
 }
 
 .add-new-modules-box {
-    position: absolute;
-    bottom: calc(100% + 25px);
-    left: 50%;
-    transform: translate(-50%, 0);
-    min-width: 350px;
+    width: 100%;
     padding: 15px;
     background: var(--white-color);
     box-shadow: var(--box-shadow);
     border-radius: 5px;
-    z-index: 10;
-    display: none;
+    position: relative;
 }
 
 .add-new-modules-box:before {
@@ -3074,10 +3066,6 @@ a:focus {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 15px solid var(--white-color);
-}
-
-.add-new-module-wp.active .add-new-modules-box {
-    display: block;
 }
 
 .add-new-modules-row {
