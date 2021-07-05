@@ -39,13 +39,18 @@ $(document).ready(function() {
             jQuery(this).parent().addClass('active');
         }
     });
+
+    $(".addlink-more-box-btn").on('click', function() {
+        $(this).toggleClass('active');
+        $(".addlink-more-actions").toggleClass("active");
+    });
     // Addlink JS End
 
     // Add New Module JS Start
     $(".add-module-plus-btn").on('click', function() {
         // $(this).toggleClass('active');
         $(".add-module-item").toggleClass('active');
-        $(".add-new-modules-box").slideToggle(500);
+        $(".add-new-modules-box").slideToggle("fast");
     });
     // Add New Module JS End
 

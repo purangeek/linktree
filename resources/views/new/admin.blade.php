@@ -139,29 +139,6 @@
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="link-item">
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                                        <g id="unlink" transform="translate(0 -0.172)">
-                                                            <path id="Path_68" data-name="Path 68" d="M179,13.411a.944.944,0,0,1-.667-1.611l1.907-1.907a4.524,4.524,0,0,0,1.347-3.241A4.593,4.593,0,0,0,177,2.064a4.524,4.524,0,0,0-3.238,1.344l-1.91,1.91a.944.944,0,0,1-1.335-1.335l1.907-1.908A6.4,6.4,0,0,1,177,.176a6.483,6.483,0,0,1,6.476,6.476,6.4,6.4,0,0,1-1.9,4.579l-1.9,1.9a.939.939,0,0,1-.667.277Zm0,0" transform="translate(-163.476 -0.004)" />
-                                                            <path id="Path_69" data-name="Path 69" d="M6.48,183.648A6.483,6.483,0,0,1,0,177.172a6.4,6.4,0,0,1,1.9-4.579l1.9-1.9a.944.944,0,1,1,1.335,1.335L3.24,173.932a4.521,4.521,0,0,0-1.348,3.241A4.593,4.593,0,0,0,6.48,181.76a4.524,4.524,0,0,0,3.238-1.344l1.91-1.91a.944.944,0,1,1,1.335,1.335l-1.907,1.908a6.4,6.4,0,0,1-4.575,1.9Zm0,0" transform="translate(-0.004 -163.476)" />
-                                                            <path id="Path_70" data-name="Path 70" d="M259.505,131.834a.944.944,0,0,1-.667-1.611l1.775-1.775a.944.944,0,1,1,1.335,1.335l-1.775,1.775A.941.941,0,0,1,259.505,131.834Zm0,0" transform="translate(-247.634 -122.59)" />
-                                                            <path id="Path_71" data-name="Path 71" d="M128.944,262.4a.944.944,0,0,1-.667-1.611l1.775-1.775a.944.944,0,0,1,1.335,1.335l-1.775,1.775A.941.941,0,0,1,128.944,262.4Zm0,0" transform="translate(-122.59 -247.634)" />
-                                                            <path id="Path_72" data-name="Path 72" d="M19.091,20.172a.906.906,0,0,1-.643-.266L.267,1.724A.909.909,0,0,1,1.552.439L19.734,18.62a.909.909,0,0,1-.643,1.552Zm0,0" transform="translate(0 0)" />
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="link-item">
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.586" height="20" viewBox="0 0 17.586 20">
-                                                        <g id="filter" transform="translate(-30.894 0)">
-                                                            <path id="Path_73" data-name="Path 73" d="M38.277,85.327H31.79a.894.894,0,0,0-.732,1.407l5.2,7.077c.237.343.166-.024.166,7.636a.939.939,0,0,0,1.5.751c2.3-1.734,2.859-1.929,2.859-2.837,0-5.354-.069-5.21.166-5.55l1.114-1.516A5.975,5.975,0,0,1,38.277,85.327Z" transform="translate(0 -82.386)" />
-                                                            <path id="Path_74" data-name="Path 74" d="M243.31,1.206a4.776,4.776,0,1,0,7.962,3.563A4.765,4.765,0,0,0,243.31,1.206Zm4.739,4.27a.6.6,0,0,1-.424,1.027c-.32,0-.4-.152-1.138-.886-.722.719-.81.886-1.138.886a.6.6,0,0,1-.424-1.027l.71-.708-.71-.708a.6.6,0,0,1,.848-.851l.714.711.714-.711a.6.6,0,0,1,.848.851l-.71.708Z" transform="translate(-202.792 0)" />
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                            </li>
                                             <li class="form-item">
                                                 <div class="form-input-wp">
                                                     <input type="text" placeholder="Search" class="form-input search-input">
@@ -191,30 +168,6 @@
                                                     <span class="add-new-module-text">Add Heading</span>
                                                 </div>
                                             </div>
-                                            <div class="add-new-modules-col">
-                                                <div class="add-new-module">
-                                                    <span class="add-new-module-icon"><i class="fas fa-video"></i></span>
-                                                    <span class="add-new-module-text">Add Video</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-new-modules-col">
-                                                <div class="add-new-module">
-                                                    <span class="add-new-module-icon"><i class="fas fa-icons"></i></span>
-                                                    <span class="add-new-module-text">Add Icons</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-new-modules-col">
-                                                <div class="add-new-module">
-                                                    <span class="add-new-module-icon"><i class="fas fa-pen"></i></span>
-                                                    <span class="add-new-module-text">Add Form</span>
-                                                </div>
-                                            </div>
-                                            <div class="add-new-modules-col">
-                                                <div class="add-new-module">
-                                                    <span class="add-new-module-icon"><i class="fas fa-image"></i></span>
-                                                    <span class="add-new-module-text">Add Image</span>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
 
@@ -223,301 +176,124 @@
                                             <div class="addlink-box-wp">
                                                 <div class="addlink-box">
                                                     <div class="addlink-drag"></div>
-                                                    <div class="addlink-right-content">
-                                                        <div class="addlink-plus">
-                                                            <div class="addlink-plus-img back-img" style="background-image: url(assets/images/default-profile-picture.png);"></div>
-                                                            <!-- <div class="addlink-plus-svg">
+                                                    <div class="addlink-right-content-wp">
+                                                        <div class="addlink-right-content">
+                                                            <div class="addlink-plus">
+                                                                <div class="addlink-plus-img back-img" style="background-image: url(assets/images/default-profile-picture.png);"></div>
+                                                                <!-- <div class="addlink-plus-svg">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="22.001" height="22" viewBox="0 0 22.001 22">
                                                                 <path id="plus-icon" d="M22,9.5v3A1.494,1.494,0,0,1,20.5,14H14v6.5A1.494,1.494,0,0,1,12.5,22h-3A1.494,1.494,0,0,1,8,20.5V14H1.5a1.447,1.447,0,0,1-1.063-.438A1.446,1.446,0,0,1,0,12.5v-3A1.447,1.447,0,0,1,.438,8.437,1.447,1.447,0,0,1,1.5,8H8V1.5A1.447,1.447,0,0,1,8.438.438,1.447,1.447,0,0,1,9.5,0h3a1.447,1.447,0,0,1,1.063.438A1.447,1.447,0,0,1,14,1.5V8h6.5A1.494,1.494,0,0,1,22,9.5Z" />
                                                             </svg>
                                                         </div> -->
-                                                            <div class="addlink-plus-input">
-                                                                <input type="file">
+                                                                <div class="addlink-plus-input">
+                                                                    <input type="file">
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="addlink-con-inr-top">
-                                                            <div class="addlink-con-title">
-                                                                <div class="kKLFiX">
-                                                                    <div class="hBaLvR">
-                                                                        <div pointer-events="none" class="fjbvLJ">
-                                                                            <input form="[object Object]" type="text" class="sc-gkdzZj sc-iuAqxS dQTQyT irUDKg" value="Linkedin">
-                                                                        </div>
-                                                                        <div class="fSmszX">
-                                                                            <button type="button" display="inline-flex" class="sc-gyUeRy hLcPlL">
-                                                                                <p class="sc-httYMd dAmNHn">Linkedin</p>
-                                                                            </button>
-                                                                            <div class="eQIJpy">
-                                                                                <button type="button" class="sc-gyUeRy hmsSkt">
-                                                                                    <svg class="sc-gVgnHT eHXlyc" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                                                                                        <path id="edit-button" d="M19.985,5.464,16.7,2.155a1.157,1.157,0,0,0-1.635,0L3.413,13.81l-1.064,4.6a1.155,1.155,0,0,0,1.12,1.4,1.2,1.2,0,0,0,.241,0l4.641-1.066L19.985,7.1A1.162,1.162,0,0,0,19.985,5.464ZM7.791,17.736l-4.35.914.991-4.274,8.717-8.7,3.359,3.365ZM17.258,8.23,13.9,4.864l1.948-1.941,3.3,3.365Z" transform="translate(-2.322 -1.817)" />
-                                                                                    </svg>
+                                                            <div class="addlink-con-inr-top">
+                                                                <div class="addlink-con-title">
+                                                                    <div class="kKLFiX">
+                                                                        <div class="hBaLvR">
+                                                                            <div pointer-events="none" class="fjbvLJ">
+                                                                                <input form="[object Object]" type="text" class="sc-gkdzZj sc-iuAqxS dQTQyT irUDKg" value="Linkedin">
+                                                                            </div>
+                                                                            <div class="fSmszX">
+                                                                                <button type="button" display="inline-flex" class="sc-gyUeRy hLcPlL">
+                                                                                    <p class="sc-httYMd dAmNHn">Linkedin</p>
                                                                                 </button>
+                                                                                <div class="eQIJpy">
+                                                                                    <button type="button" class="sc-gyUeRy hmsSkt">
+                                                                                        <svg class="sc-gVgnHT eHXlyc" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                                                                            <path id="edit-button" d="M19.985,5.464,16.7,2.155a1.157,1.157,0,0,0-1.635,0L3.413,13.81l-1.064,4.6a1.155,1.155,0,0,0,1.12,1.4,1.2,1.2,0,0,0,.241,0l4.641-1.066L19.985,7.1A1.162,1.162,0,0,0,19.985,5.464ZM7.791,17.736l-4.35.914.991-4.274,8.717-8.7,3.359,3.365ZM17.258,8.23,13.9,4.864l1.948-1.941,3.3,3.365Z" transform="translate(-2.322 -1.817)" />
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="addlink-con-link">
+                                                                    <div class="kKLFiX">
+                                                                        <div class="hBaLvR">
+                                                                            <div pointer-events="none" class="fjbvLJ">
+                                                                                <input form="[object Object]" type="text" class="sc-gkdzZj sc-iuAqxS dFNFWE irUDKg" value="https://url.com">
+                                                                            </div>
+                                                                            <div class="fSmszX"><button type="button" class="sc-gyUeRy hLcPlL">
+                                                                                    <p class="sc-httYMd iwtTzU">https://url.com</p>
+                                                                                </button>
+                                                                                <div class="eQIJpy">
+                                                                                    <button type="button" class="sc-gyUeRy hmsSkt">
+                                                                                        <svg class="sc-gVgnHT eHXlyc" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                                                                            <path id="edit-button" d="M19.985,5.464,16.7,2.155a1.157,1.157,0,0,0-1.635,0L3.413,13.81l-1.064,4.6a1.155,1.155,0,0,0,1.12,1.4,1.2,1.2,0,0,0,.241,0l4.641-1.066L19.985,7.1A1.162,1.162,0,0,0,19.985,5.464ZM7.791,17.736l-4.35.914.991-4.274,8.717-8.7,3.359,3.365ZM17.258,8.23,13.9,4.864l1.948-1.941,3.3,3.365Z" transform="translate(-2.322 -1.817)" />
+                                                                                        </svg>
+                                                                                    </button>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="addlink-con-link">
-                                                                <div class="kKLFiX">
-                                                                    <div class="hBaLvR">
-                                                                        <div pointer-events="none" class="fjbvLJ">
-                                                                            <input form="[object Object]" type="text" class="sc-gkdzZj sc-iuAqxS dFNFWE irUDKg" value="https://url.com">
-                                                                        </div>
-                                                                        <div class="fSmszX"><button type="button" class="sc-gyUeRy hLcPlL">
-                                                                                <p class="sc-httYMd iwtTzU">https://url.com</p>
-                                                                            </button>
-                                                                            <div class="eQIJpy">
-                                                                                <button type="button" class="sc-gyUeRy hmsSkt">
-                                                                                    <svg class="sc-gVgnHT eHXlyc" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                                                                                        <path id="edit-button" d="M19.985,5.464,16.7,2.155a1.157,1.157,0,0,0-1.635,0L3.413,13.81l-1.064,4.6a1.155,1.155,0,0,0,1.12,1.4,1.2,1.2,0,0,0,.241,0l4.641-1.066L19.985,7.1A1.162,1.162,0,0,0,19.985,5.464ZM7.791,17.736l-4.35.914.991-4.274,8.717-8.7,3.359,3.365ZM17.258,8.23,13.9,4.864l1.948-1.941,3.3,3.365Z" transform="translate(-2.322 -1.817)" />
-                                                                                    </svg>
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                            <div class="addlink-checkbox">
+                                                                <label for="addlink-box-checkbox" class="addlink-box-checkbox-label">
+                                                                    <input type="checkbox" name="" id="addlink-box-checkbox" class="addlink-box-checkbox-input">
+                                                                </label>
                                                             </div>
                                                         </div>
-                                                        <div class="addlink-more">
-                                                            <button class="addlink-more-icon">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="4.5" height="22.5" viewBox="0 0 4.5 22.5">
-                                                                    <g id="overflow-menu-vertical" transform="translate(-15.75 -6.75)">
-                                                                        <path id="Path_22" data-name="Path 22" d="M20.25,9A2.25,2.25,0,1,1,18,6.75,2.25,2.25,0,0,1,20.25,9Z" />
-                                                                        <path id="Path_23" data-name="Path 23" d="M20.25,18A2.25,2.25,0,1,1,18,15.75,2.25,2.25,0,0,1,20.25,18Z" />
-                                                                        <path id="Path_24" data-name="Path 24" d="M20.25,27A2.25,2.25,0,1,1,18,24.75,2.25,2.25,0,0,1,20.25,27Z" />
-                                                                    </g>
-                                                                </svg>
-                                                            </button>
-                                                            <div class="addlink-more-popup">
-                                                                <ul>
-                                                                    <li class="addlink-disable">
-                                                                        <a href="#">
-                                                                            <span class="icon">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-                                                                                    <g id="power-button" transform="translate(-19.787)">
-                                                                                        <g id="Group_57" data-name="Group 57" transform="translate(19.787 2.892)">
-                                                                                            <path id="Path_46" data-name="Path 46" d="M26.787,76.972a7.064,7.064,0,0,1-7-7.111,7.166,7.166,0,0,1,2.932-5.787,1.094,1.094,0,0,1,1.542.26A1.134,1.134,0,0,1,24,65.9,4.9,4.9,0,0,0,22,69.861a4.79,4.79,0,1,0,9.579,0A4.9,4.9,0,0,0,29.569,65.9a1.134,1.134,0,0,1-.256-1.566,1.094,1.094,0,0,1,1.542-.26,7.166,7.166,0,0,1,2.932,5.787A7.064,7.064,0,0,1,26.787,76.972Z" transform="translate(-19.787 -63.864)" />
+                                                        <div class="addlink-more-box-wp">
+                                                            <div class="addlink-more-box">
+                                                                <button class="addlink-more-box-btn">
+                                                                    <i class="fas fa-ellipsis-h"></i>
+                                                                </button>
+                                                                <div class="addlink-more-actions">
+                                                                    <ul>
+                                                                        <li class="addlink-pinlink">
+                                                                            <a href="#">
+                                                                                <span class="icon">
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.997" viewBox="0 0 16 15.997">
+                                                                                        <path id="office-pin" d="M15.864,3.9c.4-.4-.107-1.555-1.132-2.58S12.582-.2,12.169.176L12.161.169l-5.678,5.1a2.664,2.664,0,0,0-3.637.116.9.9,0,0,0,0,1.27L5.421,9.23.128,15.206a.507.507,0,0,0,.717.716l5.968-5.3.256.256L8.4,12.2h0l.992.991a.9.9,0,0,0,1.27,0,2.665,2.665,0,0,0,.116-3.637l5.073-5.649C15.851,3.9,15.859,3.9,15.864,3.9Z" transform="translate(0 -0.053)" />
+                                                                                    </svg>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="addlink-addschedule">
+                                                                            <a href="#">
+                                                                                <span class="icon">
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.009" viewBox="0 0 16 16.009">
+                                                                                        <g id="calendar" transform="translate(0.002 -0.001)">
+                                                                                            <path id="Path_48" data-name="Path 48" d="M76.152,32.448v2.237H62V32.448A.46.46,0,0,1,62.474,32h2.358v1.342a.472.472,0,0,0,.943,0V32h2.83v1.342a.472.472,0,0,0,.943,0V32h2.83v1.342a.472.472,0,0,0,.943,0V32h2.358A.46.46,0,0,1,76.152,32.448Z" transform="translate(-60.154 -31.045)" />
+                                                                                            <path id="Path_49" data-name="Path 49" d="M449.644,152.551a39.036,39.036,0,0,1-1.912,10.722h1.47a.448.448,0,0,0,.447-.447Z" transform="translate(-433.651 -147.272)" />
+                                                                                            <path id="Path_50" data-name="Path 50" d="M152.9.448V.956H152V.448a.447.447,0,1,1,.895,0Z" transform="translate(-147.24)" />
+                                                                                            <path id="Path_51" data-name="Path 51" d="M272.9.448V.956H272V.448a.447.447,0,1,1,.895,0Z" transform="translate(-263.48)" />
+                                                                                            <path id="Path_52" data-name="Path 52" d="M392.9.448V.956H392V.448a.447.447,0,0,1,.895,0Z" transform="translate(-379.719)" />
+                                                                                            <path id="Path_53" data-name="Path 53" d="M8.992,154.517a4.612,4.612,0,0,0-4.245,3.241,2.283,2.283,0,0,0,2.364,3.024,4.612,4.612,0,0,0,4.245-3.241,2.283,2.283,0,0,0-2.365-3.024Zm.94,3.58H8.052a.453.453,0,0,1-.456-.556l.47-1.79a.472.472,0,0,1,.57-.325.446.446,0,0,1,.342.543L8.654,157.2H9.932a.448.448,0,1,1,0,.895Zm-8-5.817A36.614,36.614,0,0,1,.024,162.425a.452.452,0,0,0,.444.593H13.041A36.765,36.765,0,0,0,15.1,152.28Zm10.332,5.478a5.558,5.558,0,0,1-5.157,3.918,3.183,3.183,0,0,1-3.276-4.136,5.558,5.558,0,0,1,5.157-3.918,3.183,3.183,0,0,1,3.276,4.136Zm-3.276-3.241a4.612,4.612,0,0,0-4.245,3.241,2.283,2.283,0,0,0,2.364,3.024,4.612,4.612,0,0,0,4.245-3.241A2.283,2.283,0,0,0,8.992,154.517Zm.94,3.58H8.052a.453.453,0,0,1-.456-.556l.47-1.79a.472.472,0,0,1,.57-.325.446.446,0,0,1,.342.543L8.654,157.2H9.932a.448.448,0,1,1,0,.895Zm-.94-3.58a4.612,4.612,0,0,0-4.245,3.241,2.283,2.283,0,0,0,2.364,3.024,4.612,4.612,0,0,0,4.245-3.241m-1.424.556H8.052a.453.453,0,0,1-.456-.556l.47-1.79a.472.472,0,0,1,.57-.325.446.446,0,0,1,.342.543L8.654,157.2H9.932a.448.448,0,1,1,0,.895Z" transform="translate(0 -147.009)" />
                                                                                         </g>
-                                                                                        <g id="Group_58" data-name="Group 58" transform="translate(25.679)">
-                                                                                            <path id="Path_47" data-name="Path 47" d="M151.422,8.5a1.108,1.108,0,0,1-1.108-1.108V1.108a1.108,1.108,0,0,1,2.216,0v6.28A1.108,1.108,0,0,1,151.422,8.5Z" transform="translate(-150.314)" />
-                                                                                        </g>
-                                                                                    </g>
-                                                                                </svg>
-                                                                            </span>
-                                                                            Disable
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="addlink-share">
-                                                                        <a href="#">
-                                                                            <span class="icon">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.211" viewBox="0 0 16 14.211">
-                                                                                    <path id="Path_45" data-name="Path 45" d="M143.817,6.2l-5.778-6a.667.667,0,0,0-1.147.463V3.556h-.222A8.677,8.677,0,0,0,128,12.223v1.333a.658.658,0,0,0,.519.637.6.6,0,0,0,.147.018.69.69,0,0,0,.609-.38,7.291,7.291,0,0,1,6.558-4.053h1.056v2.889a.667.667,0,0,0,1.147.462l5.778-6a.667.667,0,0,0,0-.925Zm0,0" transform="translate(-128.003 -0.001)" />
-                                                                                </svg>
-                                                                            </span>
-                                                                            Share
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="addlink-pinlink">
-                                                                        <a href="#">
-                                                                            <span class="icon">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.997" viewBox="0 0 16 15.997">
-                                                                                    <path id="office-pin" d="M15.864,3.9c.4-.4-.107-1.555-1.132-2.58S12.582-.2,12.169.176L12.161.169l-5.678,5.1a2.664,2.664,0,0,0-3.637.116.9.9,0,0,0,0,1.27L5.421,9.23.128,15.206a.507.507,0,0,0,.717.716l5.968-5.3.256.256L8.4,12.2h0l.992.991a.9.9,0,0,0,1.27,0,2.665,2.665,0,0,0,.116-3.637l5.073-5.649C15.851,3.9,15.859,3.9,15.864,3.9Z" transform="translate(0 -0.053)" />
-                                                                                </svg>
-                                                                            </span>
-                                                                            Pin Link
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="addlink-addschedule">
-                                                                        <a href="#">
-                                                                            <span class="icon">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.009" viewBox="0 0 16 16.009">
-                                                                                    <g id="calendar" transform="translate(0.002 -0.001)">
-                                                                                        <path id="Path_48" data-name="Path 48" d="M76.152,32.448v2.237H62V32.448A.46.46,0,0,1,62.474,32h2.358v1.342a.472.472,0,0,0,.943,0V32h2.83v1.342a.472.472,0,0,0,.943,0V32h2.83v1.342a.472.472,0,0,0,.943,0V32h2.358A.46.46,0,0,1,76.152,32.448Z" transform="translate(-60.154 -31.045)" />
-                                                                                        <path id="Path_49" data-name="Path 49" d="M449.644,152.551a39.036,39.036,0,0,1-1.912,10.722h1.47a.448.448,0,0,0,.447-.447Z" transform="translate(-433.651 -147.272)" />
-                                                                                        <path id="Path_50" data-name="Path 50" d="M152.9.448V.956H152V.448a.447.447,0,1,1,.895,0Z" transform="translate(-147.24)" />
-                                                                                        <path id="Path_51" data-name="Path 51" d="M272.9.448V.956H272V.448a.447.447,0,1,1,.895,0Z" transform="translate(-263.48)" />
-                                                                                        <path id="Path_52" data-name="Path 52" d="M392.9.448V.956H392V.448a.447.447,0,0,1,.895,0Z" transform="translate(-379.719)" />
-                                                                                        <path id="Path_53" data-name="Path 53" d="M8.992,154.517a4.612,4.612,0,0,0-4.245,3.241,2.283,2.283,0,0,0,2.364,3.024,4.612,4.612,0,0,0,4.245-3.241,2.283,2.283,0,0,0-2.365-3.024Zm.94,3.58H8.052a.453.453,0,0,1-.456-.556l.47-1.79a.472.472,0,0,1,.57-.325.446.446,0,0,1,.342.543L8.654,157.2H9.932a.448.448,0,1,1,0,.895Zm-8-5.817A36.614,36.614,0,0,1,.024,162.425a.452.452,0,0,0,.444.593H13.041A36.765,36.765,0,0,0,15.1,152.28Zm10.332,5.478a5.558,5.558,0,0,1-5.157,3.918,3.183,3.183,0,0,1-3.276-4.136,5.558,5.558,0,0,1,5.157-3.918,3.183,3.183,0,0,1,3.276,4.136Zm-3.276-3.241a4.612,4.612,0,0,0-4.245,3.241,2.283,2.283,0,0,0,2.364,3.024,4.612,4.612,0,0,0,4.245-3.241A2.283,2.283,0,0,0,8.992,154.517Zm.94,3.58H8.052a.453.453,0,0,1-.456-.556l.47-1.79a.472.472,0,0,1,.57-.325.446.446,0,0,1,.342.543L8.654,157.2H9.932a.448.448,0,1,1,0,.895Zm-.94-3.58a4.612,4.612,0,0,0-4.245,3.241,2.283,2.283,0,0,0,2.364,3.024,4.612,4.612,0,0,0,4.245-3.241m-1.424.556H8.052a.453.453,0,0,1-.456-.556l.47-1.79a.472.472,0,0,1,.57-.325.446.446,0,0,1,.342.543L8.654,157.2H9.932a.448.448,0,1,1,0,.895Z" transform="translate(0 -147.009)" />
-                                                                                    </g>
-                                                                                </svg>
-                                                                            </span>
-                                                                            Add Schedule
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="addlink-delete">
-                                                                        <a href="#">
-                                                                            <span class="icon">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="11.613" height="16" viewBox="0 0 11.613 16">
-                                                                                    <g id="delete" transform="translate(-40.72 0)">
-                                                                                        <g id="Group_116" data-name="Group 116" transform="translate(40.72 0)">
-                                                                                            <g id="Group_115" data-name="Group 115" transform="translate(0 0)">
-                                                                                                <path id="Path_129" data-name="Path 129" d="M95.862,19.93l-7.359-3.5a.74.74,0,0,0-.985.351l-.251.528,8.695,4.13.251-.527A.74.74,0,0,0,95.862,19.93Z" transform="translate(-84.671 -15.491)" />
-                                                                                                <path id="Path_130" data-name="Path 130" d="M41.092,88.7a.372.372,0,0,0-.371.4l.752,9.021a1.853,1.853,0,0,0,1.836,1.689h4.206a1.853,1.853,0,0,0,1.836-1.689l.689-8.263L47.6,88.7Z" transform="translate(-40.72 -83.81)" />
-                                                                                                <path id="Path_131" data-name="Path 131" d="M150.661,1.083A.593.593,0,0,1,151.45.8l1.38.655a.593.593,0,0,1,.281.79l-.169.356.672.319.169-.356a1.338,1.338,0,0,0-.634-1.78L151.769.13a1.336,1.336,0,0,0-1.78.634l-.169.356.672.319Z" transform="translate(-143.887 0)" />
+                                                                                    </svg>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="addlink-delete">
+                                                                            <a href="#">
+                                                                                <span class="icon">
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.613" height="16" viewBox="0 0 11.613 16">
+                                                                                        <g id="delete" transform="translate(-40.72 0)">
+                                                                                            <g id="Group_116" data-name="Group 116" transform="translate(40.72 0)">
+                                                                                                <g id="Group_115" data-name="Group 115" transform="translate(0 0)">
+                                                                                                    <path id="Path_129" data-name="Path 129" d="M95.862,19.93l-7.359-3.5a.74.74,0,0,0-.985.351l-.251.528,8.695,4.13.251-.527A.74.74,0,0,0,95.862,19.93Z" transform="translate(-84.671 -15.491)" />
+                                                                                                    <path id="Path_130" data-name="Path 130" d="M41.092,88.7a.372.372,0,0,0-.371.4l.752,9.021a1.853,1.853,0,0,0,1.836,1.689h4.206a1.853,1.853,0,0,0,1.836-1.689l.689-8.263L47.6,88.7Z" transform="translate(-40.72 -83.81)" />
+                                                                                                    <path id="Path_131" data-name="Path 131" d="M150.661,1.083A.593.593,0,0,1,151.45.8l1.38.655a.593.593,0,0,1,.281.79l-.169.356.672.319.169-.356a1.338,1.338,0,0,0-.634-1.78L151.769.13a1.336,1.336,0,0,0-1.78.634l-.169.356.672.319Z" transform="translate(-143.887 0)" />
+                                                                                                </g>
                                                                                             </g>
                                                                                         </g>
-                                                                                    </g>
-                                                                                </svg>
-                                                                            </span>
-                                                                            Delete
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
+                                                                                    </svg>
+                                                                                </span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="addlink-box-wp">
-                                                <div class="addlink-box">
-                                                    <div class="addlink-drag"></div>
-                                                    <div class="addlink-right-content">
-                                                        <div class="addlink-plus">
-                                                            <!-- <div class="addlink-plus-img back-img" style="background-image: url(assets/images/default-profile-picture.png);"></div> -->
-                                                            <div class="addlink-plus-svg">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="22.001" height="22" viewBox="0 0 22.001 22">
-                                                                    <path id="plus-icon" d="M22,9.5v3A1.494,1.494,0,0,1,20.5,14H14v6.5A1.494,1.494,0,0,1,12.5,22h-3A1.494,1.494,0,0,1,8,20.5V14H1.5a1.447,1.447,0,0,1-1.063-.438A1.446,1.446,0,0,1,0,12.5v-3A1.447,1.447,0,0,1,.438,8.437,1.447,1.447,0,0,1,1.5,8H8V1.5A1.447,1.447,0,0,1,8.438.438,1.447,1.447,0,0,1,9.5,0h3a1.447,1.447,0,0,1,1.063.438A1.447,1.447,0,0,1,14,1.5V8h6.5A1.494,1.494,0,0,1,22,9.5Z" />
-                                                                </svg>
-                                                            </div>
-                                                            <div class="addlink-plus-input">
-                                                                <input type="file">
-                                                            </div>
-                                                        </div>
-                                                        <div class="addlink-con-inr-top">
-                                                            <div class="addlink-con-title">
-                                                                <div class="kKLFiX">
-                                                                    <div class="hBaLvR">
-                                                                        <div pointer-events="none" class="fjbvLJ">
-                                                                            <input form="[object Object]" type="text" class="sc-gkdzZj sc-iuAqxS dQTQyT irUDKg" value="Linkedin">
-                                                                        </div>
-                                                                        <div class="fSmszX">
-                                                                            <button type="button" display="inline-flex" class="sc-gyUeRy hLcPlL">
-                                                                                <p class="sc-httYMd dAmNHn">Linkedin</p>
-                                                                            </button>
-                                                                            <div class="eQIJpy">
-                                                                                <button type="button" class="sc-gyUeRy hmsSkt">
-                                                                                    <svg class="sc-gVgnHT eHXlyc" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                                                                                        <path id="edit-button" d="M19.985,5.464,16.7,2.155a1.157,1.157,0,0,0-1.635,0L3.413,13.81l-1.064,4.6a1.155,1.155,0,0,0,1.12,1.4,1.2,1.2,0,0,0,.241,0l4.641-1.066L19.985,7.1A1.162,1.162,0,0,0,19.985,5.464ZM7.791,17.736l-4.35.914.991-4.274,8.717-8.7,3.359,3.365ZM17.258,8.23,13.9,4.864l1.948-1.941,3.3,3.365Z" transform="translate(-2.322 -1.817)" />
-                                                                                    </svg>
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="addlink-con-link">
-                                                                <div class="kKLFiX">
-                                                                    <div class="hBaLvR">
-                                                                        <div pointer-events="none" class="fjbvLJ">
-                                                                            <input form="[object Object]" type="text" class="sc-gkdzZj sc-iuAqxS dFNFWE irUDKg" value="https://url.com">
-                                                                        </div>
-                                                                        <div class="fSmszX"><button type="button" class="sc-gyUeRy hLcPlL">
-                                                                                <p class="sc-httYMd iwtTzU">https://url.com</p>
-                                                                            </button>
-                                                                            <div class="eQIJpy">
-                                                                                <button type="button" class="sc-gyUeRy hmsSkt">
-                                                                                    <svg class="sc-gVgnHT eHXlyc" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                                                                                        <path id="edit-button" d="M19.985,5.464,16.7,2.155a1.157,1.157,0,0,0-1.635,0L3.413,13.81l-1.064,4.6a1.155,1.155,0,0,0,1.12,1.4,1.2,1.2,0,0,0,.241,0l4.641-1.066L19.985,7.1A1.162,1.162,0,0,0,19.985,5.464ZM7.791,17.736l-4.35.914.991-4.274,8.717-8.7,3.359,3.365ZM17.258,8.23,13.9,4.864l1.948-1.941,3.3,3.365Z" transform="translate(-2.322 -1.817)" />
-                                                                                    </svg>
-                                                                                </button>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="addlink-more">
-                                                            <button class="addlink-more-icon">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="4.5" height="22.5" viewBox="0 0 4.5 22.5">
-                                                                    <g id="overflow-menu-vertical" transform="translate(-15.75 -6.75)">
-                                                                        <path id="Path_22" data-name="Path 22" d="M20.25,9A2.25,2.25,0,1,1,18,6.75,2.25,2.25,0,0,1,20.25,9Z" />
-                                                                        <path id="Path_23" data-name="Path 23" d="M20.25,18A2.25,2.25,0,1,1,18,15.75,2.25,2.25,0,0,1,20.25,18Z" />
-                                                                        <path id="Path_24" data-name="Path 24" d="M20.25,27A2.25,2.25,0,1,1,18,24.75,2.25,2.25,0,0,1,20.25,27Z" />
-                                                                    </g>
-                                                                </svg>
-                                                            </button>
-                                                            <div class="addlink-more-popup">
-                                                                <ul>
-                                                                    <li class="addlink-disable">
-                                                                        <a href="#">
-                                                                            <span class="icon">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-                                                                                    <g id="power-button" transform="translate(-19.787)">
-                                                                                        <g id="Group_57" data-name="Group 57" transform="translate(19.787 2.892)">
-                                                                                            <path id="Path_46" data-name="Path 46" d="M26.787,76.972a7.064,7.064,0,0,1-7-7.111,7.166,7.166,0,0,1,2.932-5.787,1.094,1.094,0,0,1,1.542.26A1.134,1.134,0,0,1,24,65.9,4.9,4.9,0,0,0,22,69.861a4.79,4.79,0,1,0,9.579,0A4.9,4.9,0,0,0,29.569,65.9a1.134,1.134,0,0,1-.256-1.566,1.094,1.094,0,0,1,1.542-.26,7.166,7.166,0,0,1,2.932,5.787A7.064,7.064,0,0,1,26.787,76.972Z" transform="translate(-19.787 -63.864)" />
-                                                                                        </g>
-                                                                                        <g id="Group_58" data-name="Group 58" transform="translate(25.679)">
-                                                                                            <path id="Path_47" data-name="Path 47" d="M151.422,8.5a1.108,1.108,0,0,1-1.108-1.108V1.108a1.108,1.108,0,0,1,2.216,0v6.28A1.108,1.108,0,0,1,151.422,8.5Z" transform="translate(-150.314)" />
-                                                                                        </g>
-                                                                                    </g>
-                                                                                </svg>
-                                                                            </span>
-                                                                            Disable
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="addlink-share">
-                                                                        <a href="#">
-                                                                            <span class="icon">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.211" viewBox="0 0 16 14.211">
-                                                                                    <path id="Path_45" data-name="Path 45" d="M143.817,6.2l-5.778-6a.667.667,0,0,0-1.147.463V3.556h-.222A8.677,8.677,0,0,0,128,12.223v1.333a.658.658,0,0,0,.519.637.6.6,0,0,0,.147.018.69.69,0,0,0,.609-.38,7.291,7.291,0,0,1,6.558-4.053h1.056v2.889a.667.667,0,0,0,1.147.462l5.778-6a.667.667,0,0,0,0-.925Zm0,0" transform="translate(-128.003 -0.001)" />
-                                                                                </svg>
-                                                                            </span>
-                                                                            Share
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="addlink-pinlink">
-                                                                        <a href="#">
-                                                                            <span class="icon">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.997" viewBox="0 0 16 15.997">
-                                                                                    <path id="office-pin" d="M15.864,3.9c.4-.4-.107-1.555-1.132-2.58S12.582-.2,12.169.176L12.161.169l-5.678,5.1a2.664,2.664,0,0,0-3.637.116.9.9,0,0,0,0,1.27L5.421,9.23.128,15.206a.507.507,0,0,0,.717.716l5.968-5.3.256.256L8.4,12.2h0l.992.991a.9.9,0,0,0,1.27,0,2.665,2.665,0,0,0,.116-3.637l5.073-5.649C15.851,3.9,15.859,3.9,15.864,3.9Z" transform="translate(0 -0.053)" />
-                                                                                </svg>
-                                                                            </span>
-                                                                            Pin Link
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="addlink-addschedule">
-                                                                        <a href="#">
-                                                                            <span class="icon">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16.009" viewBox="0 0 16 16.009">
-                                                                                    <g id="calendar" transform="translate(0.002 -0.001)">
-                                                                                        <path id="Path_48" data-name="Path 48" d="M76.152,32.448v2.237H62V32.448A.46.46,0,0,1,62.474,32h2.358v1.342a.472.472,0,0,0,.943,0V32h2.83v1.342a.472.472,0,0,0,.943,0V32h2.83v1.342a.472.472,0,0,0,.943,0V32h2.358A.46.46,0,0,1,76.152,32.448Z" transform="translate(-60.154 -31.045)" />
-                                                                                        <path id="Path_49" data-name="Path 49" d="M449.644,152.551a39.036,39.036,0,0,1-1.912,10.722h1.47a.448.448,0,0,0,.447-.447Z" transform="translate(-433.651 -147.272)" />
-                                                                                        <path id="Path_50" data-name="Path 50" d="M152.9.448V.956H152V.448a.447.447,0,1,1,.895,0Z" transform="translate(-147.24)" />
-                                                                                        <path id="Path_51" data-name="Path 51" d="M272.9.448V.956H272V.448a.447.447,0,1,1,.895,0Z" transform="translate(-263.48)" />
-                                                                                        <path id="Path_52" data-name="Path 52" d="M392.9.448V.956H392V.448a.447.447,0,0,1,.895,0Z" transform="translate(-379.719)" />
-                                                                                        <path id="Path_53" data-name="Path 53" d="M8.992,154.517a4.612,4.612,0,0,0-4.245,3.241,2.283,2.283,0,0,0,2.364,3.024,4.612,4.612,0,0,0,4.245-3.241,2.283,2.283,0,0,0-2.365-3.024Zm.94,3.58H8.052a.453.453,0,0,1-.456-.556l.47-1.79a.472.472,0,0,1,.57-.325.446.446,0,0,1,.342.543L8.654,157.2H9.932a.448.448,0,1,1,0,.895Zm-8-5.817A36.614,36.614,0,0,1,.024,162.425a.452.452,0,0,0,.444.593H13.041A36.765,36.765,0,0,0,15.1,152.28Zm10.332,5.478a5.558,5.558,0,0,1-5.157,3.918,3.183,3.183,0,0,1-3.276-4.136,5.558,5.558,0,0,1,5.157-3.918,3.183,3.183,0,0,1,3.276,4.136Zm-3.276-3.241a4.612,4.612,0,0,0-4.245,3.241,2.283,2.283,0,0,0,2.364,3.024,4.612,4.612,0,0,0,4.245-3.241A2.283,2.283,0,0,0,8.992,154.517Zm.94,3.58H8.052a.453.453,0,0,1-.456-.556l.47-1.79a.472.472,0,0,1,.57-.325.446.446,0,0,1,.342.543L8.654,157.2H9.932a.448.448,0,1,1,0,.895Zm-.94-3.58a4.612,4.612,0,0,0-4.245,3.241,2.283,2.283,0,0,0,2.364,3.024,4.612,4.612,0,0,0,4.245-3.241m-1.424.556H8.052a.453.453,0,0,1-.456-.556l.47-1.79a.472.472,0,0,1,.57-.325.446.446,0,0,1,.342.543L8.654,157.2H9.932a.448.448,0,1,1,0,.895Z" transform="translate(0 -147.009)" />
-                                                                                    </g>
-                                                                                </svg>
-                                                                            </span>
-                                                                            Add Schedule
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="addlink-delete">
-                                                                        <a href="#">
-                                                                            <span class="icon">
-                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="11.613" height="16" viewBox="0 0 11.613 16">
-                                                                                    <g id="delete" transform="translate(-40.72 0)">
-                                                                                        <g id="Group_116" data-name="Group 116" transform="translate(40.72 0)">
-                                                                                            <g id="Group_115" data-name="Group 115" transform="translate(0 0)">
-                                                                                                <path id="Path_129" data-name="Path 129" d="M95.862,19.93l-7.359-3.5a.74.74,0,0,0-.985.351l-.251.528,8.695,4.13.251-.527A.74.74,0,0,0,95.862,19.93Z" transform="translate(-84.671 -15.491)" />
-                                                                                                <path id="Path_130" data-name="Path 130" d="M41.092,88.7a.372.372,0,0,0-.371.4l.752,9.021a1.853,1.853,0,0,0,1.836,1.689h4.206a1.853,1.853,0,0,0,1.836-1.689l.689-8.263L47.6,88.7Z" transform="translate(-40.72 -83.81)" />
-                                                                                                <path id="Path_131" data-name="Path 131" d="M150.661,1.083A.593.593,0,0,1,151.45.8l1.38.655a.593.593,0,0,1,.281.79l-.169.356.672.319.169-.356a1.338,1.338,0,0,0-.634-1.78L151.769.13a1.336,1.336,0,0,0-1.78.634l-.169.356.672.319Z" transform="translate(-143.887 0)" />
-                                                                                            </g>
-                                                                                        </g>
-                                                                                    </g>
-                                                                                </svg>
-                                                                            </span>
-                                                                            Delete
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
                                         </div>
 
                                     </div>
