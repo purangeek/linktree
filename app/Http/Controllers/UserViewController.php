@@ -15,24 +15,28 @@ class UserViewController extends Controller
     public function index(){
         $user_id = Auth::user()->id;
         $links = Links::orderby('id', 'ASC')->where('user_id', $user_id)->get();
-        // $data = DB::table('users')
-        //     ->join('links', 'users.id', '=', 'links.user_id')
-        //     // ->join('sociallinks', 'users.id', '=', 'sociallinks.user_id')
-        //     // ->join('themes', 'users.id', '=', 'themes.user_id')
-        //     ->select('users.*', 'links.*')
-        //     ->get();
-        // return $data;
-
-        return view('new.admin')->with('links', $links);
+        $user_data = DB::table('users')->where('id', $user_id)->select('name', 'profile_description')->first();
+        // $links = DB::table('links')->where('user_id', $user_id)->get();
+        // $social_links = DB::table('sociallinks')->where('user_id', $user_id)->get();
+        // $themes = DB::table('themes')->where('user_id', $user_id)->get();
+            // ->join('sociallinks', 'users.id', '=', 'sociallinks.user_id')
+            // ->join('themes', 'users.id', '=', 'themes.user_id')
+            // ->select('users.*', 'links.*')
+            // ->get();
+        //return $user_data;
+        // $data = [
+        //     'links'  => $links,
+        //     'user_data'   => $user_data,
+        //     'social_links' => $social_links,
+        //     'themes' => $themes
+        // ];
+        //dd($user_data);
+        return view('new.admin',compact('links','user_data'));
+        // return view('new.admin', compact(array('links', 'user_data')));
     }
 
     
     public function themes(){
-        $user_id = Auth::user()->id;
-        return view('themes');
-    }
-
-    public function themes2(){
         $user_id = Auth::user()->id;
         return view('themes');
     }
