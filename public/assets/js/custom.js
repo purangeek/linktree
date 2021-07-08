@@ -114,6 +114,4 @@ $(document).ready(function() {
         $(".tab-box-inner." + list_child_tab).show();
     });
 
-    
-
 });

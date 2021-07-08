@@ -74,16 +74,16 @@
                                 <div class="toolbar-mf-button-group">
                                     <ul>
                                         <li>
-                                            <a href="#" class="toolbar-mf-btn"><span>Linkedin</span></a>
+                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Linkedin</span></a>
                                         </li>
                                         <li>
-                                            <a href="#" class="toolbar-mf-btn"><span>Geek Web</span></a>
+                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Geek Web</span></a>
                                         </li>
                                         <li>
-                                            <a href="#" class="toolbar-mf-btn"><span>Twitter</span></a>
+                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Twitter</span></a>
                                         </li>
                                         <li>
-                                            <a href="#" class="toolbar-mf-btn"><span>Facebook</span></a>
+                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
                                         </li>
                                     </ul>
                                 </div>
