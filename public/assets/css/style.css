@@ -1292,6 +1292,44 @@ a:focus {
     color: var(--white-color);
 }
 
+.custom-checkbox-input {
+    height: 20px;
+    width: 32px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: var(--transition);
+    background: var(--white-light-color);
+}
+
+.custom-checkbox-input:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 0;
+    background: var(--white-color);
+    border-radius: 50%;
+    -webkit-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    transform: translateX(2px);
+    transition: var(--transition);
+}
+
+.custom-checkbox-input:checked:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+.custom-checkbox-input:checked {
+    background: var(--gradient-color);
+}
+
 
 /*==========Common CSS End==========*/
 
@@ -1550,6 +1588,19 @@ a:focus {
 
 .compensate-for-scrollbar {
     margin-right: 0 !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--white-light-color);
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid var(--white-light-color);
+    background: transparent;
 }
 
 
@@ -1879,18 +1930,8 @@ a:focus {
     overflow-x: hidden;
 }
 
-.action-area-wp::-webkit-scrollbar {
-    width: 6px;
-}
-
-.action-area-wp::-webkit-scrollbar-thumb {
-    background: var(--white-light-color);
-}
-
 .action-area-wp::-webkit-scrollbar-track {
-    border: 1px solid var(--white-light-color);
     border-left-width: 2px;
-    background: transparent;
 }
 
 .action-area-wrap {
@@ -1914,6 +1955,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
@@ -1985,10 +2027,9 @@ a:focus {
     display: none;
 }
 
-
-/* .tab-inner-box.profile-inner-box {
+.tab-inner-box.profile-inner-box {
     display: none;
-} */
+}
 
 .link-header-wp {
     margin-bottom: 30px;
@@ -2064,29 +2105,6 @@ a:focus {
     padding: 0 50px;
 }
 
-.form-input-hover {
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    min-height: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--white-color);
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
-    border-radius: 8px;
-    padding: 10px;
-    pointer-events: none;
-    opacity: 0;
-    z-index: 2;
-}
-
-.link-header-wp ul li.form-item.active .form-input-hover {
-    min-height: 130px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
 .addlink-boxes-inner {
     height: 100%;
 }
@@ -2139,7 +2157,7 @@ a:focus {
     padding: 20px 20px 0;
     display: flex;
     flex-flow: column;
-    overflow: hidden;
+    justify-content: space-between;
 }
 
 .addlink-box .addlink-right-content {
@@ -2287,7 +2305,8 @@ a:focus {
 
 .eQIJpy {
     display: flex;
-    margin-left: 8px;
+    padding-left: 8px;
+    cursor: pointer;
 }
 
 .hmsSkt {
@@ -2391,6 +2410,30 @@ a:focus {
 
 
 /* end */
+
+/* addlink header start */
+
+.addlink-box-header-wp .hBaLvR {
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.addlink-box-header-wp .fSmszX {
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.addlink-box-header-wp .dQTQyT {
+    text-align: center;
+}
+
+.addlink-box-header-wp .fjbvLJ {
+    margin-right: 24px;
+}
+
+/* addlink header end */
 
 .addlink-con-title .addlink-con-title-text {
     color: var(--fulldark-color);
@@ -2530,44 +2573,6 @@ a:focus {
     display: flex;
 }
 
-.addlink-box-checkbox-input {
-    height: 20px;
-    width: 32px;
-    cursor: pointer;
-    position: relative;
-    border-radius: 10px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    transition: var(--transition);
-    background: var(--white-light-color);
-}
-
-.addlink-box-checkbox-input:before {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 2px;
-    left: 0;
-    background: var(--white-color);
-    border-radius: 50%;
-    -webkit-transform: translateX(2px);
-    -ms-transform: translateX(2px);
-    transform: translateX(2px);
-    transition: var(--transition);
-}
-
-.addlink-box-checkbox-input:checked:before {
-    -webkit-transform: translateX(14px);
-    -ms-transform: translateX(14px);
-    transform: translateX(14px);
-}
-
-.addlink-box-checkbox-input:checked {
-    background: var(--gradient-color);
-}
-
 /*==========Action Area CSS End==========*/
 
 
@@ -2614,7 +2619,7 @@ a:focus {
 
 .color-boxes ul li {
     margin: 8px;
-    flex: 0 0 30px;
+    flex: 0 0 auto;
     max-width: 30px;
 }
 
@@ -3008,7 +3013,7 @@ a:focus {
     height: 120px;
     border-radius: 10px;
     margin-right: 30px;
-    flex: 0 0 120px;
+    flex: 0 0 auto;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -3070,10 +3075,6 @@ a:focus {
     font-size: 22px;
 }
 
-.add-new-module-wp .add-module-plus-btn i {
-    transition: var(--transition);
-}
-
 .link-header-wp ul li.link-item.add-module-item.active .add-module-plus-btn i {
     transform: rotate(45deg);
 }
@@ -3114,13 +3115,12 @@ a:focus {
     flex-direction: column;
     flex-wrap: wrap;
     color: var(--fulldark-color);
-    border-radius: 5px;
+    background: var(--white-color);
     border: 1px solid var(--body-color);
-    box-shadow: var(--box-shadow);
+    border-radius: 5px;
     padding: 8px;
     cursor: pointer;
     transition: var(--transition);
-    background: var(--white-color);
 }
 
 .add-new-module:hover {
@@ -3145,8 +3145,8 @@ a:focus {
 /*==========Toolbar CSS Start==========*/
 
 .toolbar-wrap {
-    flex: 0 0 600px;
-    max-width: 600px;
+    width: 600px;
+    flex: 0 0 auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -3160,7 +3160,7 @@ a:focus {
     border: 1px solid var(--white-light-color);
     background: var(--white-color);
     height: 80px;
-    flex: 0 0 80px;
+    flex: 0 0 auto;
 }
 
 .toolbar-header-inner {
@@ -3249,15 +3249,20 @@ a:focus {
 }
 
 .toolbar-mobile-frame {
-    display: block;
-    /* max-width: 39vh; */
-    max-width: 370px;
-    width: 100%;
+    width: 370px;
     height: 730px;
     background-color: var(--body-color);
-    border: 18px solid var(--dark-color);
+    border: 18px solid var(--fulldark-color);
     border-radius: 30px;
     position: relative;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 20px 15px;
 }
 
 .toolbar-mf-bg {
@@ -3268,16 +3273,23 @@ a:focus {
     height: 100%;
     background-color: var(--body-color);
     border-radius: 10px;
-    z-index: 1;
+    z-index: -1;
 }
 
 .toolbar-mf-box {
-    height: 100%;
-    padding: 20px 15px;
+    flex: 1;
     position: relative;
     z-index: 2;
-    overflow-x: hidden;
-    overflow-y: auto;
+}
+
+.toolbar-mf-logo {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.toolbar-mf-logo a {
+    width: 100px;
+    display: inline-block;
 }
 
 .toolbar-mf-header {
@@ -3292,9 +3304,7 @@ a:focus {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -65px;
+    margin: -65px auto 0;
 }
 
 .toolbar-mf-header-content .h4-title {
@@ -3328,22 +3338,26 @@ a:focus {
 .toolbar-mf-button-group ul li a {
     width: 100%;
     min-height: 56px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: var(--white-color);
     color: var(--fulldark-color);
     border-radius: 30px;
-    padding: 10px 10px;
+    padding: 10px 30px;
     font-weight: 700;
     transition: var(--transition);
     box-shadow: var(--box-shadow);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    white-space: normal;
 }
 
 .toolbar-mf-button-group ul li a:hover {
     background: var(--green-color);
     color: var(--white-color);
-    transform: scale(0.95);
+    transform: scale(0.97);
 }
 
 .toolbar-mf-social-group {
@@ -3359,9 +3373,7 @@ a:focus {
     color: var(--white-color);
     border-radius: 50%;
     font-weight: 700;
-    transition: var(--transition);
     font-size: 24px;
-    box-shadow: var(--box-shadow);
     width: 50px;
     height: 50px;
     display: inline-flex;
@@ -3371,8 +3383,36 @@ a:focus {
 }
 
 .toolbar-mf-social-group ul li a:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
+
+/* --- page-view-section start --- */
+
+.page-view-section {
+    min-height: 100vh;
+    height: 100%;
+    padding: 50px 15px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+
+.page-view-section .toolbar-mf-bg {
+    border-radius: 0;
+}
+
+.page-view-section .sec-wp,
+.page-view-section .container,
+.page-view-section .container .row,
+.page-view-section .container .row [class*=col-],
+.page-view-section .page-view-box-wp {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    height: 100%;
+}
+
+/* --- page-view-section end--- */
 
 
 /*==========Toolbar CSS End==========*/
@@ -4846,7 +4886,7 @@ a:focus {
     border-radius: 15px;
     background: var(--white-color);
     box-shadow: var(--box-shadow);
-    flex: 0 0 80px;
+    flex: 0 0 auto;
     margin-right: 30px;
 }
 
