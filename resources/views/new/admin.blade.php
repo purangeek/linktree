@@ -71,7 +71,7 @@
                             </li>
                             <li class="sidebar--profile">
                                 <a href="#">
-                                    <div class="sidebar--profile-img back-img" style="background-image: url(assets/images/default-profile-picture.png);"></div>
+                                    <div class="sidebar--profile-img back-img" style="background-image: url({{ asset('assets/images/default-profile-picture.png') }});"></div>
                                 </a>
                                 <div class="sidebar--dropdown-nav">
                                     <div class="sidebar--dropdown-nav--divider">KaranGeek</div>
@@ -178,15 +178,15 @@
                                                     <div class="addlink-right-content-wp">
                                                         <div class="addlink-right-content">
                                                             <div class="addlink-plus">
-                                                                <div class="addlink-plus-img back-img" style="background-image: url(assets/images/default-profile-picture.png);"></div>
+                                                                <div class="addlink-plus-img back-img" style="background-image: url({{ asset('assets/images/default-profile-picture.png') }});"></div>
                                                                 <!-- <div class="addlink-plus-svg">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="22.001" height="22" viewBox="0 0 22.001 22">
                                                                 <path id="plus-icon" d="M22,9.5v3A1.494,1.494,0,0,1,20.5,14H14v6.5A1.494,1.494,0,0,1,12.5,22h-3A1.494,1.494,0,0,1,8,20.5V14H1.5a1.447,1.447,0,0,1-1.063-.438A1.446,1.446,0,0,1,0,12.5v-3A1.447,1.447,0,0,1,.438,8.437,1.447,1.447,0,0,1,1.5,8H8V1.5A1.447,1.447,0,0,1,8.438.438,1.447,1.447,0,0,1,9.5,0h3a1.447,1.447,0,0,1,1.063.438A1.447,1.447,0,0,1,14,1.5V8h6.5A1.494,1.494,0,0,1,22,9.5Z" />
                                                             </svg>
                                                         </div> -->
-                                                                <div class="add-custom-input">
+                                                                <span class="add-custom-input">
                                                                     <input type="file">
-                                                                </div>
+                                                                </span>
 
                                                             </div>
                                                             <div class="addlink-con-inr-top">
@@ -301,12 +301,6 @@
                                                     <div class="addlink-drag"></div>
                                                     <div class="addlink-right-content-wp">
                                                         <div class="addlink-right-content">
-                                                            <!-- <div class="addlink-plus">
-                                                                <div class="addlink-plus-img back-img" style="background-image: url(assets/images/default-profile-picture.png);"></div>
-                                                                <div class="addlink-plus-input">
-                                                                    <input type="file">
-                                                                </div>
-                                                            </div> -->
                                                             <div class="addlink-con-inr-top">
                                                                 <div class="addlink-con-title">
                                                                     <div class="kKLFiX">
@@ -522,6 +516,9 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                                     <path id="eyedropper" d="M20,3.9a3.9,3.9,0,0,0-6.66-2.759L10.573,3.911A1.224,1.224,0,0,0,8.91,5.574L2.532,11.951a6.261,6.261,0,0,0-1.59,2.7L.048,17.782A1.249,1.249,0,0,0,.366,19.01l.625.625a1.249,1.249,0,0,0,1.227.318l3.129-.894a6.26,6.26,0,0,0,2.7-1.59l6.377-6.377A1.224,1.224,0,0,0,16.09,9.428l2.767-2.767A3.876,3.876,0,0,0,20,3.9ZM6.282,15.7a3.756,3.756,0,0,1-1.622.954l-1.841.526.526-1.841A3.757,3.757,0,0,1,4.3,13.719l6.325-6.325,1.982,1.982Z" transform="translate(0 -0.001)" />
                                                 </svg>
+                                                <span class="add-custom-input">
+                                                    <input type="color" name="" id="">
+                                                </span>
                                             </div>
                                             <div class="color-picker-input">
                                                 <input type="text" value="#2196F3">
@@ -743,42 +740,42 @@
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url(assets/images/preview-image1.jpg);"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image1.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url(assets/images/preview-image2.jpg);"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image2.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url(assets/images/preview-image3.jpg);"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image3.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url(assets/images/preview-image4.jpg);"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image4.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url(assets/images/preview-image5.jpg);"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image5.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url(assets/images/preview-image6.jpg);"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image6.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url(assets/images/preview-image7.jpg);"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image7.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url(assets/images/preview-image8.jpg);"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image8.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1311,11 +1308,12 @@
                             <div class="toolbar-mf-button-group">
                                 <ul>
                                     <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn">
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn toolbar-btn-img-wp">
                                             <span>Facebook</span>
                                             <span class="toolbar-btn-img">
                                                 <img src="{{ asset('assets/images/default-profile-picture.png') }}" alt="default-profile-picture">
                                             </span>
+                                            <!-- <span class="toolbar-btn-img toolbar-btn-icon" style="-webkit-mask-image: url('{{ asset('assets/images/default-profile-picture.png') }}');"></span> -->
                                         </a>
                                     </li>
                                     <li>

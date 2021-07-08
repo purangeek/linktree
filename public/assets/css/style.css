@@ -2030,14 +2030,14 @@ a:focus {
     display: none;
 }
 
-.tab-inner-box.background-inner-box {
-    display: none;
-}
 
-
-/* .tab-inner-box.buttons-inner-box {
+/* .tab-inner-box.background-inner-box {
     display: none;
 } */
+
+.tab-inner-box.buttons-inner-box {
+    display: none;
+}
 
 .tab-inner-box.font-inner-box {
     display: none;
@@ -2656,7 +2656,6 @@ a:focus {
 
 .color-picker-input {
     margin-right: 15px;
-    flex: 1;
 }
 
 .color-picker-input input {
@@ -3433,6 +3432,10 @@ a:focus {
     transform: scale(0.95);
 }
 
+.toolbar-btn-img-wp {
+    padding: 15px 60px;
+}
+
 .toolbar-btn-img {
     position: absolute;
     top: 50%;
@@ -3445,8 +3448,8 @@ a:focus {
     align-items: center;
     border-radius: 50%;
     background-color: transparent;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     left: 8px;
 }
 

@@ -50,7 +50,7 @@
 
 <body>
     <section class="page-view-section">
-        <div class="toolbar-mf-bg preview_img_theme_1_back back-img" style="background-image: url(assets/images/preview_img_theme_1_mob.jpg);"></div>
+        <div class="toolbar-mf-bg preview_img_theme_1_back back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_1_mob.jpg') }});"></div>
         <div class="sec-wp">
             <div class="container">
                 <div class="row">
@@ -63,7 +63,7 @@
                     @endforeach -->
                             <div class="toolbar-mf-box">
                                 <div class="toolbar-mf-header">
-                                    <div class="toolbar-mf-prof-image back-img" style="background-image: url(assets/images/default-profile-picture.png);"></div>
+                                    <div class="toolbar-mf-prof-image back-img" style="background-image: url({{ asset('assets/images/default-profile-picture.png') }});"></div>
                                     <div class="toolbar-mf-header-content">
                                         <h4 class="h4-title">Divyang Geek</h4>
                                         <div class="toolbar-mf-header-text">
@@ -73,18 +73,24 @@
                                 </div>
                                 <div class="toolbar-mf-button-group">
                                     <ul>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
-                                    </li>
+                                        <li>
+                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn toolbar-btn-img-wp">
+                                                <span>Facebook</span>
+                                                <span class="toolbar-btn-img">
+                                                    <img src="{{ asset('assets/images/default-profile-picture.png') }}" alt="default-profile-picture">
+                                                </span>
+                                                <!-- <span class="toolbar-btn-img toolbar-btn-icon" style="-webkit-mask-image: url('{{ asset('assets/images/default-profile-picture.png') }}');"></span> -->
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="toolbar-mf-social-group">
