@@ -1922,7 +1922,6 @@ a:focus {
 
 .action-area-wp {
     margin-left: 80px;
-    /* margin-top: 80px; */
     padding-top: 50px;
     height: calc(100vh - 80px);
     position: relative;
@@ -2081,7 +2080,6 @@ a:focus {
 .link-header-wp ul li.link-item.active a svg {
     fill: var(--white-color);
 }
-
 
 .link-header-wp ul li.form-item {
     flex: 1;
@@ -2411,6 +2409,7 @@ a:focus {
 
 /* end */
 
+
 /* addlink header start */
 
 .addlink-box-header-wp .hBaLvR {
@@ -2432,6 +2431,7 @@ a:focus {
 .addlink-box-header-wp .fjbvLJ {
     margin-right: 24px;
 }
+
 
 /* addlink header end */
 
@@ -2572,6 +2572,7 @@ a:focus {
     margin: 0;
     display: flex;
 }
+
 
 /*==========Action Area CSS End==========*/
 
@@ -3090,6 +3091,7 @@ a:focus {
     display: none;
 }
 
+
 /* .add-new-modules-box:before {
     content: '';
     position: absolute;
@@ -3386,6 +3388,7 @@ a:focus {
     transform: scale(0.95);
 }
 
+
 /* --- page-view-section start --- */
 
 .page-view-section {
@@ -3411,6 +3414,7 @@ a:focus {
     flex-flow: column;
     height: 100%;
 }
+
 
 /* --- page-view-section end--- */
 
