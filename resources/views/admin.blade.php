@@ -885,7 +885,7 @@
             </div>
             <div class="toolbar-content-box">
                 <div class="toolbar-mobile-frame">
-                    <div class="toolbar-mf-bg back-img" style="background-image: url( {{ asset('assets/images/preview_img_theme_1_mob.jpg') }});"></div>
+                    <div class="toolbar-mf-bg back-img" style="background-image: url( {{ asset('assets/images/preview-image8.jpg') }});"></div>
                     <div class="toolbar-mf-box">
                         <div class="toolbar-mf-header">
                             <div class="toolbar-mf-prof-image back-img" style="background-image: url({{ asset('assets/images/profile-image.jpg') }});"></div>
