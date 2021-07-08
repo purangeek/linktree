@@ -95,7 +95,7 @@
                         <div class="action-area">
                             <div class="action-primary">
                                 <div class="button-group">
-                                    <a href="#" class="tab-btn tab-active">
+                                    <a href="javascript:void(0);" data-child-tab="links-tab-box" class="tab-btn main-tab tab-active">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20.003" viewBox="0 0 20 20.003">
                                             <g id="link_-_icon" data-name="link - icon" transform="translate(-0.039 0)">
                                                 <g id="Group_87" data-name="Group 87" transform="translate(0.039 6.405)">
@@ -112,7 +112,7 @@
                                         </svg>
                                         Links
                                     </a>
-                                    <a href="#" class="tab-btn">
+                                    <a href="javascript:void(0);" data-child-tab="themes-tab-box" class="tab-btn main-tab">
                                         <svg id="brush" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                             <path id="Path_78" data-name="Path 78" d="M18.242,2.344h-.586V1.758A1.76,1.76,0,0,0,15.9,0H2.93A1.76,1.76,0,0,0,1.172,1.758v.586H0V3.516H1.172V4.1A1.747,1.747,0,0,0,1.8,5.437,2.344,2.344,0,0,1,4.1,3.516H6.484A2.346,2.346,0,0,1,8.828,5.859H15.9A1.76,1.76,0,0,0,17.656,4.1V3.516h.586a.586.586,0,0,1,.586.586V6.445a.586.586,0,0,1-.586.586h-7.07A1.76,1.76,0,0,0,9.414,8.789v.694a1.755,1.755,0,0,0-1.172,1.65v1.211A5.549,5.549,0,0,1,7.7,14.5a6.4,6.4,0,0,0-.63,2.566,2.93,2.93,0,1,0,5.859,0A6.405,6.405,0,0,0,12.3,14.5a5.572,5.572,0,0,1-.542-2.16V11.133a1.755,1.755,0,0,0-1.172-1.65V8.789a.586.586,0,0,1,.586-.586h7.07A1.76,1.76,0,0,0,20,6.445V4.1A1.76,1.76,0,0,0,18.242,2.344Z" transform="translate(0 0)" />
                                             <path id="Path_79" data-name="Path 79" d="M79.648,121.152A1.154,1.154,0,0,0,78.5,120H76.152A1.154,1.154,0,0,0,75,121.152v2.3a1.152,1.152,0,0,0,2.3,0V122.3H78.5A1.154,1.154,0,0,0,79.648,121.152Z" transform="translate(-72.119 -115.289)" />
@@ -398,16 +398,16 @@
                                 <div class="tab-box themes-tab-box">
                                     <div class="link-header-wp">
                                         <ul>
-                                            <li class="link-item active">
-                                                <a href="#">
+                                            <li class="link-item active" data-child-tab="themes-inner-box">
+                                                <a href="javascript:void(0);">
                                                     <svg id="brush" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                                         <path id="Path_78" data-name="Path 78" d="M18.242,2.344h-.586V1.758A1.76,1.76,0,0,0,15.9,0H2.93A1.76,1.76,0,0,0,1.172,1.758v.586H0V3.516H1.172V4.1A1.747,1.747,0,0,0,1.8,5.437,2.344,2.344,0,0,1,4.1,3.516H6.484A2.346,2.346,0,0,1,8.828,5.859H15.9A1.76,1.76,0,0,0,17.656,4.1V3.516h.586a.586.586,0,0,1,.586.586V6.445a.586.586,0,0,1-.586.586h-7.07A1.76,1.76,0,0,0,9.414,8.789v.694a1.755,1.755,0,0,0-1.172,1.65v1.211A5.549,5.549,0,0,1,7.7,14.5a6.4,6.4,0,0,0-.63,2.566,2.93,2.93,0,1,0,5.859,0A6.405,6.405,0,0,0,12.3,14.5a5.572,5.572,0,0,1-.542-2.16V11.133a1.755,1.755,0,0,0-1.172-1.65V8.789a.586.586,0,0,1,.586-.586h7.07A1.76,1.76,0,0,0,20,6.445V4.1A1.76,1.76,0,0,0,18.242,2.344Z" />
                                                         <path id="Path_79" data-name="Path 79" d="M79.648,121.152A1.154,1.154,0,0,0,78.5,120H76.152A1.154,1.154,0,0,0,75,121.152v2.3a1.152,1.152,0,0,0,2.3,0V122.3H78.5A1.154,1.154,0,0,0,79.648,121.152Z" transform="translate(-72.119 -115.289)" />
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="link-item">
-                                                <a href="#">
+                                            <li class="link-item" data-child-tab="background-inner-box">
+                                                <a href="javascript:void(0);">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                                         <g id="Layer_2" data-name="Layer 2" transform="translate(0.006 0.01)">
                                                             <g id="Layer_1" data-name="Layer 1" transform="translate(-0.006 -0.01)">
@@ -417,16 +417,16 @@
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="link-item">
-                                                <a href="#">
+                                            <li class="link-item" data-child-tab="buttons-inner-box">
+                                                <a href="javascript:void(0);">
                                                     <svg id="button" xmlns="http://www.w3.org/2000/svg" width="19.999" height="20" viewBox="0 0 19.999 20">
                                                         <path id="Path_163" data-name="Path 163" d="M13.707,8.074l2.824,2.117a3.077,3.077,0,0,0,1.586-2.7V3.1A3.1,3.1,0,0,0,15.02,0H3.1A3.1,3.1,0,0,0,0,3.1V7.492a3.1,3.1,0,0,0,3.1,3.094h7.656V9.371A1.747,1.747,0,0,1,11.727,7.8a1.748,1.748,0,0,1,1.535-.02h0" />
                                                         <path id="Path_164" data-name="Path 164" d="M313.14,230.185l-6.9-5.18a.587.587,0,0,0-.938.469V234.1a.587.587,0,0,0,.848.527l1.777-.891,1.02,2.039a.585.585,0,0,0,.785.262l2.3-1.152a.585.585,0,0,0,.262-.785l-1.02-2.039,1.777-.891a.582.582,0,0,0,.32-.473.57.57,0,0,0-.23-.516Z" transform="translate(-293.374 -216.103)" />
                                                     </svg>
                                                 </a>
                                             </li>
-                                            <li class="link-item">
-                                                <a href="#">
+                                            <li class="link-item" data-child-tab="font-inner-box">
+                                                <a href="javascript:void(0);">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18.047" viewBox="0 0 20 18.047">
                                                         <g id="font" transform="translate(0 -25)">
                                                             <g id="Group_119" data-name="Group 119" transform="translate(0 25)">
@@ -437,7 +437,7 @@
                                                 </a>
                                             </li>
                                             <li class="link-item">
-                                                <a href="#">
+                                                <a href="javascript:void(0);">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="20" viewBox="0 0 20.001 20">
                                                         <g id="profile-user" transform="translate(0 -0.001)">
                                                             <path id="Path_166" data-name="Path 166" d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,2.99A3.308,3.308,0,1,1,6.693,6.3,3.308,3.308,0,0,1,10,2.991Zm0,14.4a7.339,7.339,0,0,1-4.779-1.762,1.41,1.41,0,0,1-.495-1.071,3.336,3.336,0,0,1,3.352-3.335h3.849a3.331,3.331,0,0,1,3.347,3.335,1.406,1.406,0,0,1-.494,1.071A7.337,7.337,0,0,1,10,17.386Z" />
