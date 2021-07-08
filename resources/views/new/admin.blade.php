@@ -1311,40 +1311,21 @@
                             <div class="toolbar-mf-button-group">
                                 <ul>
                                     <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Linkedin</span></a>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn">
+                                            <span>Facebook</span>
+                                            <span class="toolbar-btn-img">
+                                                <img src="{{ asset('assets/images/default-profile-picture.png') }}" alt="default-profile-picture">
+                                            </span>
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill"><span>Linkedin</span></a>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnoutline"><span>Geek Web</span></a>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btndoubleoutline"><span>Twitter</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btndashedoutline"><span>Facebook</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill arrowright circular overflow-hide"><span>Facebook</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill torn-edges"><span>Facebook</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn formal-2-stroke"><span>Facebook</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill topbottom-stroke"><span>Facebook</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill box-border"><span>Facebook</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnhardshadow"><span>Facebook</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnsoftshadow"><span>Facebook</span></a>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
                                     </li>
                                 </ul>
                             </div>

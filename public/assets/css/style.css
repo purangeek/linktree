@@ -2651,10 +2651,12 @@ a:focus {
     margin-right: 15px;
     cursor: pointer;
     position: relative;
+    flex: 0 0 auto;
 }
 
 .color-picker-input {
     margin-right: 15px;
+    flex: 1;
 }
 
 .color-picker-input input {
@@ -2675,6 +2677,7 @@ a:focus {
     box-shadow: var(--box-shadow);
     background-color: var(--white-color);
     border-radius: 10px;
+    flex: 0 0 auto;
 }
 
 .background-inner-box .color-picker-wrap {
@@ -3428,6 +3431,36 @@ a:focus {
 
 .toolbar-mf-social-group ul li a:hover {
     transform: scale(0.95);
+}
+
+.toolbar-btn-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    overflow: hidden;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    left: 8px;
+}
+
+.toolbar-btn-img.toolbar-btn-icon {
+    background-color: currentcolor;
+    -webkit-mask-size: 100%;
+}
+
+.toolbar-btn-img img {
+    width: auto;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: initial;
 }
 
 
