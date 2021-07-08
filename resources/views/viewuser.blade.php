@@ -50,7 +50,7 @@
 
 <body>
     <section class="page-view-section">
-        <div class="toolbar-mf-bg back-img" style="background-image: url(assets/images/preview-image8.jpg);"></div>
+        <div class="toolbar-mf-bg preview_img_theme_1_back back-img" style="background-image: url(assets/images/preview_img_theme_1_mob.jpg);"></div>
         <div class="sec-wp">
             <div class="container">
                 <div class="row">
@@ -102,9 +102,7 @@
                                 </div>
                             </div>
                             <div class="toolbar-mf-logo">
-                                <a href="#">
-                                    <img src="assets/images/linktree-logo.svg" alt="linktree-logo">
-                                </a>
+                                <a href="#"><img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo"></a>
                             </div>
                         </div>
                     </div>

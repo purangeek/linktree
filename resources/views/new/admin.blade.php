@@ -12,7 +12,7 @@
     <!-- <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16"> -->
 
     <!-- Bootstrap CSS Link -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,7 +54,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="site-branding">
-                                    <a href="index.php"><img src="assets/images/linktree-logo.svg" alt="linktree-logo"></a>
+                                    <a href="index.php"><img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo"></a>
                                 </div>
                             </div>
                         </div>
@@ -1292,7 +1292,7 @@
                 </div>
                 <div class="toolbar-content-box">
                     <div class="toolbar-mobile-frame">
-                        <div class="toolbar-mf-bg back-img" style="background-image: url(assets/images/preview-image8.jpg);"></div>
+                        <div class="toolbar-mf-bg back-img" style="background-image: url(assets/images/preview_img_theme_1_mob.jpg);"></div>
                         <div class="toolbar-mf-box">
                             <div class="toolbar-mf-header">
                                 <div class="toolbar-mf-prof-image back-img" style="background-image: url(assets/images/default-profile-picture.png);"></div>
@@ -1334,9 +1334,7 @@
                             </div>
                         </div>
                         <div class="toolbar-mf-logo">
-                            <a href="#">
-                                <img src="assets/images/linktree-logo.svg" alt="linktree-logo">
-                            </a>
+                            <a href="#"><img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo"></a>
                         </div>
                     </div>
                 </div>

@@ -3054,6 +3054,25 @@ a:focus {
 /*==========Themes CSS End==========*/
 
 
+/*==========Preview Themes 1 CSS Start==========*/
+
+@media (min-width: 576px) {
+    .preview_img_theme_1_back {
+        background-image: url('../images/preview_img_theme_1_des.jpg') !important;
+    }
+}
+
+
+/* @media (max-width:575px) {
+    .preview_img_theme_1_back {
+        background-image: url('../images/preview_img_theme_1_mob.jpg');
+    }
+} */
+
+
+/*==========Preview Themes 1 CSS End==========*/
+
+
 /*==========Add New Module CSS Start==========*/
 
 .link-header-wp ul li.link-item.add-module-item {
