@@ -10,6 +10,13 @@ $(document).ready(function() {
     });
     // Search JS End
 
+    // Link Copy Start
+    $(".toolbar-link-copy").on('click', function() {
+        $(this).toggleClass('active');
+    });
+    // Link Copy End
+
+
     // Accordion JS End
     jQuery('.accordion .faq-content').hide();
     jQuery('.accordion > div:eq(0) h3').addClass('active-faq');

@@ -3267,10 +3267,15 @@ a:focus {
     transition: var(--transition);
 }
 
-.toolbar-header-buttons ul li a:hover {
+.toolbar-header-buttons ul li a:hover,
+.toolbar-link-copy.active {
     background: var(--green-color);
     border-color: var(--green-color);
     color: var(--white-color);
+}
+
+.toolbar-link-copy.active i {
+    font-weight: 900;
 }
 
 .toolbar-content-box {

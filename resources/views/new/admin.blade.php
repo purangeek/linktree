@@ -1272,7 +1272,7 @@
                         </div>
                         <div class="toolbar-header-buttons">
                             <ul>
-                                <li><a href="javascript:void(0);"><i class="fas fa-copy"></i></a></li>
+                                <li><a href="javascript:void(0);" class="toolbar-link-copy"><i class="far fa-copy"></i></a></li>
                                 <li><a href="javascript:void(0);"><i class="fas fa-qrcode"></i></a></li>
                             </ul>
                         </div>
