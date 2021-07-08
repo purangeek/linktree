@@ -740,42 +740,27 @@
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image1.jpg') }});"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_1_mob.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image2.jpg') }});"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_2_mob.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image3.jpg') }});"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_3_mob.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image4.jpg') }});"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_4_mob.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image5.jpg') }});"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image6.jpg') }});"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image7.jpg') }});"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <div class="back-image-box">
-                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview-image8.jpg') }});"></div>
+                                                        <div class="back-image-box-preview back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_5_mob.jpg') }});"></div>
                                                     </div>
                                                 </div>
                                             </div>
