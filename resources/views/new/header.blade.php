@@ -47,8 +47,7 @@
 <body>
 
 
-@yield('content-new')
-
+    @yield('content-new')
 
 
     <!-- Bootstrap JS Link -->

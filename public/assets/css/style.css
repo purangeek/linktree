@@ -2017,14 +2017,14 @@ a:focus {
     flex-direction: column;
 }
 
-.tab-box.links-tab-box {
-    display: none;
-}
 
-
-/* .tab-box.themes-tab-box {
+/* .tab-box.links-tab-box {
     display: none;
 } */
+
+.tab-box.themes-tab-box {
+    display: none;
+}
 
 .tab-inner-box.themes-inner-box {
     display: none;
