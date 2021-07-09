@@ -2017,16 +2017,7 @@ a:focus {
     flex-direction: column;
 }
 
-
-/* .tab-box.links-tab-box {
-    display: none;
-} */
-
 .tab-box.themes-tab-box {
-    display: none;
-}
-
-.tab-inner-box.themes-inner-box {
     display: none;
 }
 
@@ -2034,10 +2025,9 @@ a:focus {
     display: none;
 }
 
-
-/* .tab-inner-box.buttons-inner-box {
+.tab-inner-box.buttons-inner-box {
     display: none;
-} */
+}
 
 .tab-inner-box.font-inner-box {
     display: none;
