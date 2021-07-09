@@ -2030,14 +2030,14 @@ a:focus {
     display: none;
 }
 
-
-/* .tab-inner-box.background-inner-box {
-    display: none;
-} */
-
-.tab-inner-box.buttons-inner-box {
+.tab-inner-box.background-inner-box {
     display: none;
 }
+
+
+/* .tab-inner-box.buttons-inner-box {
+    display: none;
+} */
 
 .tab-inner-box.font-inner-box {
     display: none;
@@ -2776,8 +2776,12 @@ a:focus {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.buttons-box-color-wp .color-boxes {
+    flex: 1;
+    padding: 10px 15px 0 0;
 }
 
 .buttons-preview-row {
@@ -2797,19 +2801,19 @@ a:focus {
 }
 
 .buttons-preview-col-inner {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     cursor: pointer;
     height: 50px;
+    z-index: 2;
 }
 
 .buttons-preview {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-weight: bold;
     color: var(--fulldark-color);
+    position: relative;
     z-index: 2;
 }
 
@@ -2861,8 +2865,8 @@ a:focus {
     overflow: hidden;
 }
 
-.arrowright .buttons-preview {
-    left: calc(50% - 20px);
+.arrowright span {
+    margin-left: -20px;
 }
 
 .arrowright:before {
@@ -2881,6 +2885,7 @@ a:focus {
     line-height: 26px;
     font-weight: 900;
     font-family: "Font Awesome 5 Free";
+    z-index: 1;
 }
 
 .formal-2-stroke {
@@ -2965,7 +2970,8 @@ a:focus {
     height: 100%;
     top: 5px;
     left: 5px;
-    border: 2px solid var(--fulldark-color);
+    border: 2px solid var(--green-color);
+    z-index: -1;
 }
 
 .font-preview-row {
@@ -3422,7 +3428,6 @@ a:focus {
 
 .toolbar-mf-social-group ul li a {
     color: var(--white-color);
-    border-radius: 50%;
     font-weight: 700;
     font-size: 24px;
     width: 50px;
