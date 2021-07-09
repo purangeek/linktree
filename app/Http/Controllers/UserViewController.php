@@ -15,12 +15,12 @@ class UserViewController extends Controller
     public function index()
     {
         $user_id = Auth::user()->id;
-        $links = Links::orderby('id', 'ASC')->where('user_id', $user_id)->get();
+        //$links = Links::orderby('id', 'ASC')->where('user_id', $user_id)->get();
         $user_data = DB::table('users')->where('id', $user_id)->select('name', 'profile_description')->first();
 
-        // $links = DB::table('links')->where('user_id', $user_id)->get();
-        // $social_links = DB::table('sociallinks')->where('user_id', $user_id)->get();
-        // $themes = DB::table('themes')->where('user_id', $user_id)->get();
+        $links = DB::table('links')->where('user_id', $user_id)->get();
+        $social_links = DB::table('sociallinks')->where('user_id', $user_id)->get();
+        $themes = DB::table('themes')->where('user_id', $user_id)->get();
         // ->join('sociallinks', 'users.id', '=', 'sociallinks.user_id')
         // ->join('themes', 'users.id', '=', 'themes.user_id')
         // ->select('users.*', 'links.*')
