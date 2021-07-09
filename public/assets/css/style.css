@@ -88,6 +88,7 @@ body {
 body,
 html {
     overflow-x: hidden !important;
+    position: relative;
 }
 
 * {
@@ -1178,10 +1179,6 @@ h6 {
     visibility: hidden;
 }
 
-a:hover {
-    color: initial;
-}
-
 .for-des {
     display: block !important;
 }
@@ -1289,6 +1286,64 @@ a:focus {
 ::selection {
     background: var(--blue-color);
     color: var(--white-color);
+}
+
+.custom-checkbox-input {
+    height: 20px;
+    width: 32px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: var(--transition);
+    background: var(--white-light-color);
+}
+
+.custom-checkbox-input:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 0;
+    background: var(--white-color);
+    border-radius: 50%;
+    -webkit-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    transform: translateX(2px);
+    transition: var(--transition);
+}
+
+.custom-checkbox-input:checked:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+.custom-checkbox-input:checked {
+    background: var(--gradient-color);
+}
+
+.add-custom-input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+.add-custom-input input {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    text-indent: -9999px;
 }
 
 
@@ -1551,6 +1606,19 @@ a:focus {
     margin-right: 0 !important;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--white-light-color);
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid var(--white-light-color);
+    background: transparent;
+}
+
 
 /*==========Overflow CSS End==========*/
 
@@ -1684,17 +1752,16 @@ a:focus {
     height: 80px;
     display: flex;
     align-items: center;
-    padding: 25px;
+    padding: 8px 25px;
     border: 1px solid var(--white-light-color);
     border-right: none;
     background: var(--white-color);
-    /* position: absolute; */
     width: 100%;
     z-index: 100;
 }
 
 .site-branding {
-    width: 192px;
+    width: 150px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -1871,7 +1938,6 @@ a:focus {
 
 .action-area-wp {
     margin-left: 80px;
-    /* margin-top: 80px; */
     padding-top: 50px;
     height: calc(100vh - 80px);
     position: relative;
@@ -1879,16 +1945,8 @@ a:focus {
     overflow-x: hidden;
 }
 
-.action-area-wp::-webkit-scrollbar {
-    width: 3px;
-}
-
-.action-area-wp::-webkit-scrollbar-thumb {
-    background: var(--green-color);
-}
-
 .action-area-wp::-webkit-scrollbar-track {
-    background: var(--white-light-color);
+    border-left-width: 2px;
 }
 
 .action-area-wrap {
@@ -1912,6 +1970,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
@@ -1975,18 +2034,18 @@ a:focus {
     display: none;
 }
 
-.tab-inner-box.buttons-inner-box {
+
+/* .tab-inner-box.buttons-inner-box {
     display: none;
-}
+} */
 
 .tab-inner-box.font-inner-box {
     display: none;
 }
 
-
-/* .tab-inner-box.profile-inner-box {
+.tab-inner-box.profile-inner-box {
     display: none;
-} */
+}
 
 .link-header-wp {
     margin-bottom: 30px;
@@ -2001,11 +2060,14 @@ a:focus {
     display: inline-block;
     width: 50px;
     height: 50px;
-    flex: 0 0 50px;
+    flex: 0 0 auto;
+}
+
+.link-header-wp ul li {
     margin-right: 15px;
 }
 
-.link-header-wp ul li.link-item:last-child {
+.link-header-wp ul li:last-child {
     margin-right: 0;
 }
 
@@ -2058,32 +2120,8 @@ a:focus {
     padding: 0 50px;
 }
 
-.form-input-hover {
-    position: absolute;
-    top: calc(100% + 10px);
-    left: 0;
-    min-height: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--white-color);
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
-    border-radius: 8px;
-    padding: 10px;
-    pointer-events: none;
-    opacity: 0;
-    z-index: 2;
-}
-
-.link-header-wp ul li.form-item.active .form-input-hover {
-    min-height: 130px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
 .addlink-boxes-inner {
     height: 100%;
-    padding-bottom: 70px;
 }
 
 .addlink-boxes-wp {
@@ -2113,7 +2151,7 @@ a:focus {
     width: 20px;
     position: relative;
     border-right: 1px solid var(--white-light-color);
-    flex: 0 0 20px;
+    flex: 0 0 auto;
     cursor: grab;
 }
 
@@ -2129,9 +2167,15 @@ a:focus {
     border-radius: 4px;
 }
 
-.addlink-box .addlink-right-content {
+.addlink-box .addlink-right-content-wp {
     flex: 1;
-    padding: 20px 20px;
+    padding: 20px 20px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.addlink-box .addlink-right-content {
     display: flex;
 }
 
@@ -2144,7 +2188,7 @@ a:focus {
     border-radius: 50%;
     position: relative;
     cursor: pointer;
-    flex: 0 0 50px;
+    flex: 0 0 auto;
     transition: var(--transition);
     margin-right: 15px;
     overflow: hidden;
@@ -2196,24 +2240,6 @@ a:focus {
     flex: 1;
     width: 100%;
     padding-right: 12px;
-}
-
-.addlink-right-content .addlink-plus .addlink-plus-input {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 5;
-}
-
-.addlink-right-content .addlink-plus .addlink-plus-input input[type="file"] {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    opacity: 0;
-    text-indent: -9999px;
 }
 
 
@@ -2276,7 +2302,8 @@ a:focus {
 
 .eQIJpy {
     display: flex;
-    margin-left: 8px;
+    padding-left: 8px;
+    cursor: pointer;
 }
 
 .hmsSkt {
@@ -2381,6 +2408,32 @@ a:focus {
 
 /* end */
 
+
+/* addlink header start */
+
+.addlink-box-header-wp .hBaLvR {
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.addlink-box-header-wp .fSmszX {
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.addlink-box-header-wp .dQTQyT {
+    text-align: center;
+}
+
+.addlink-box-header-wp .fjbvLJ {
+    margin-right: 24px;
+}
+
+
+/* addlink header end */
+
 .addlink-con-title .addlink-con-title-text {
     color: var(--fulldark-color);
     font-weight: 500;
@@ -2425,116 +2478,98 @@ a:focus {
     align-items: center;
 }
 
-.addlink-right-content .addlink-more .addlink-more-icon {
-    padding: 0;
+.addlink-more-box-wp {
+    margin-top: 15px;
+    padding: 0 35px 0;
+}
+
+.addlink-more-box-btn {
     border: none;
-    outline: none;
-    background: none;
+    background: var(--green-color);
+    color: var(--white-color);
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    border-radius: 5px 5px 0 0;
+    display: none;
 }
 
-.addlink-right-content .addlink-more .addlink-more-icon svg {
-    fill: var(--dark-color);
+.addlink-more-box-btn i:before {
+    transition: var(--transition);
 }
 
-.addlink-right-content .addlink-more {
-    width: 5px;
+.addlink-more-box {
     position: relative;
-    flex: 0 0 5px;
-}
-
-.addlink-more-popup {
-    position: absolute;
-    top: 0;
-    right: calc(100% + 15px);
-    min-width: 190px;
     width: 100%;
     padding: 10px;
-    background: var(--white-color);
-    box-shadow: var(--box-shadow);
-    border-radius: 5px;
-    border: 1px solid var(--body-color);
-    transition: var(--transition);
-    opacity: 0;
-    pointer-events: none;
-    z-index: 5;
+    border-radius: 50px 50px 0 0;
+    background: var(--green-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 51px;
 }
 
-.addlink-right-content .addlink-more.active .addlink-more-popup {
-    opacity: 1;
-    pointer-events: auto;
+.addlink-more-box ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.addlink-more-popup ul li {
-    margin-bottom: 10px;
+.addlink-more-box ul li {
+    margin-right: 15px;
+    display: inline-block;
 }
 
-.addlink-more-popup ul li:last-child {
-    margin-bottom: 0;
+.addlink-more-box ul li:last-child {
+    margin-right: 0;
 }
 
-.addlink-more-popup ul li a {
+.addlink-more-box ul li a {
     display: inline-flex;
     color: var(--fulldark-color);
     align-items: center;
     font-size: 16px;
 }
 
-.addlink-more-popup ul li a .icon {
+.addlink-more-box ul li a .icon {
     width: 30px;
     height: 30px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    background: rgb(41 83 232 / 40%);
-    margin-right: 10px;
+    background: var(--white-color);
     box-shadow: var(--box-shadow);
     transition: var(--transition);
 }
 
-.addlink-more-popup ul li a:hover .icon {
-    background: var(--blue-color);
-}
-
-.addlink-more-popup ul li a .icon svg {
-    fill: var(--blue-color);
+.addlink-more-box ul li a .icon svg {
+    fill: var(--green-color);
     transition: var(--transition);
 }
 
-.addlink-more-popup ul li a:hover .icon svg {
-    fill: var(--white-color);
+.addlink-more-box ul li.addlink-delete a .icon svg {
+    fill: var(--red-color);
 }
 
-.addlink-more-popup ul li.addlink-disable a .icon {
-    background: var(--white-light-color);
+.addlink-more-box-btn.active i:before {
+    content: "\f00d";
 }
 
-.addlink-more-popup ul li.addlink-disable a .icon svg {
-    fill: var(--dark-color);
+.addlink-checkbox {
+    flex: 0 0 auto;
 }
 
-.addlink-more-popup ul li.addlink-disable a:hover .icon {
-    background: var(--green-color);
-}
-
-.addlink-more-popup ul li.addlink-disable a:hover .icon svg {
-    fill: var(--white-color);
-}
-
-.addlink-more-popup ul li.addlink-delete a .icon {
-    background: var(--white-light-color);
-}
-
-.addlink-more-popup ul li.addlink-delete a .icon svg {
-    fill: var(--dark-color);
-}
-
-.addlink-more-popup ul li.addlink-delete a:hover .icon {
-    background: var(--red-color);
-}
-
-.addlink-more-popup ul li.addlink-delete a:hover .icon svg {
-    fill: var(--white-color);
+.addlink-box-checkbox-label {
+    margin: 0;
+    display: flex;
 }
 
 
@@ -2584,7 +2619,7 @@ a:focus {
 
 .color-boxes ul li {
     margin: 8px;
-    flex: 0 0 30px;
+    flex: 0 0 auto;
     max-width: 30px;
 }
 
@@ -2615,6 +2650,8 @@ a:focus {
     box-shadow: var(--box-shadow);
     margin-right: 15px;
     cursor: pointer;
+    position: relative;
+    flex: 0 0 auto;
 }
 
 .color-picker-input {
@@ -2639,6 +2676,7 @@ a:focus {
     box-shadow: var(--box-shadow);
     background-color: var(--white-color);
     border-radius: 10px;
+    flex: 0 0 auto;
 }
 
 .background-inner-box .color-picker-wrap {
@@ -2738,8 +2776,12 @@ a:focus {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.buttons-box-color-wp .color-boxes {
+    flex: 1;
+    padding: 10px 15px 0 0;
 }
 
 .buttons-preview-row {
@@ -2759,19 +2801,19 @@ a:focus {
 }
 
 .buttons-preview-col-inner {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     cursor: pointer;
     height: 50px;
+    z-index: 2;
 }
 
 .buttons-preview {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-weight: bold;
     color: var(--fulldark-color);
+    position: relative;
     z-index: 2;
 }
 
@@ -2781,6 +2823,7 @@ a:focus {
 
 .btnfill {
     background-color: var(--fulldark-color);
+    color: var(--white-color);
 }
 
 .round {
@@ -2793,23 +2836,28 @@ a:focus {
 
 .btnoutline {
     border: 2px solid var(--fulldark-color);
+    color: var(--fulldark-color);
 }
 
 .btndoubleoutline {
     border: 5px double var(--fulldark-color);
+    color: var(--fulldark-color);
 }
 
 .btndashedoutline {
     border: 2px dashed var(--fulldark-color);
+    color: var(--fulldark-color);
 }
 
 .btnhardshadow {
     border: 2px solid var(--fulldark-color);
+    color: var(--fulldark-color);
     box-shadow: 4px 4px 0 0 var(--fulldark-color);
 }
 
 .btnsoftshadow {
     border: 2px solid var(--fulldark-color);
+    color: var(--fulldark-color);
     box-shadow: 0 4px 4px 0 rgb(40 47 55 / 16%);
 }
 
@@ -2817,10 +2865,15 @@ a:focus {
     overflow: hidden;
 }
 
-.arrowright .arrow {
+.arrowright span {
+    margin-left: -20px;
+}
+
+.arrowright:before {
+    content: '\f054';
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
     width: 40px;
     height: 100%;
     display: flex;
@@ -2828,10 +2881,15 @@ a:focus {
     justify-content: center;
     background-color: var(--dark-color);
     color: var(--white-color);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    z-index: 1;
 }
 
-.arrowright .buttons-preview {
-    left: calc(50% - 20px);
+.formal-2-stroke {
+    color: var(--fulldark-color);
 }
 
 .formal-2-stroke:before {
@@ -2912,7 +2970,8 @@ a:focus {
     height: 100%;
     top: 5px;
     left: 5px;
-    border: 2px solid var(--fulldark-color);
+    border: 2px solid var(--green-color);
+    z-index: -1;
 }
 
 .font-preview-row {
@@ -2978,7 +3037,7 @@ a:focus {
     height: 120px;
     border-radius: 10px;
     margin-right: 30px;
-    flex: 0 0 120px;
+    flex: 0 0 auto;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -3018,18 +3077,35 @@ a:focus {
 /*==========Themes CSS End==========*/
 
 
+/*==========Preview Themes 1 CSS Start==========*/
+
+@media (min-width: 576px) {
+    .preview_img_theme_1_back {
+        background-image: url('../images/preview_img_theme_1_des.jpg') !important;
+    }
+}
+
+
+/* @media (max-width:575px) {
+    .preview_img_theme_1_back {
+        background-image: url('../images/preview_img_theme_1_mob.jpg');
+    }
+} */
+
+
+/*==========Preview Themes 1 CSS End==========*/
+
+
 /*==========Add New Module CSS Start==========*/
 
-.add-new-module-wp {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+.link-header-wp ul li.link-item.add-module-item {
+    width: 60px;
+    height: 60px;
 }
 
 .add-module-plus-btn {
-    width: 60px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3042,46 +3118,36 @@ a:focus {
     font-size: 22px;
 }
 
-.add-new-module-wp .add-module-plus-btn i {
-    transition: var(--transition);
-}
-
-.add-new-module-wp.active .add-module-plus-btn i {
+.link-header-wp ul li.link-item.add-module-item.active .add-module-plus-btn i {
     transform: rotate(45deg);
 }
 
 .add-new-modules-box {
-    position: absolute;
-    bottom: calc(100% + 25px);
-    left: 50%;
-    transform: translate(-50%, 0);
-    min-width: 350px;
+    width: 100%;
     padding: 15px;
     background: var(--white-color);
     box-shadow: var(--box-shadow);
     border-radius: 5px;
-    z-index: 10;
+    margin-bottom: 30px;
+    position: relative;
     display: none;
 }
 
-.add-new-modules-box:before {
+
+/* .add-new-modules-box:before {
     content: '';
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    bottom: 100%;
+    right: 15px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 15px solid var(--white-color);
-}
-
-.add-new-module-wp.active .add-new-modules-box {
-    display: block;
-}
+    border-bottom: 15px solid var(--white-color);
+    z-index: 1;
+} */
 
 .add-new-modules-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
@@ -3093,13 +3159,12 @@ a:focus {
     flex-direction: column;
     flex-wrap: wrap;
     color: var(--fulldark-color);
-    border-radius: 5px;
+    background: var(--white-color);
     border: 1px solid var(--body-color);
-    box-shadow: var(--box-shadow);
+    border-radius: 5px;
     padding: 8px;
     cursor: pointer;
     transition: var(--transition);
-    background: var(--white-color);
 }
 
 .add-new-module:hover {
@@ -3124,8 +3189,8 @@ a:focus {
 /*==========Toolbar CSS Start==========*/
 
 .toolbar-wrap {
-    flex: 0 0 600px;
-    max-width: 600px;
+    width: 600px;
+    flex: 0 0 auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -3139,7 +3204,7 @@ a:focus {
     border: 1px solid var(--white-light-color);
     background: var(--white-color);
     height: 80px;
-    flex: 0 0 80px;
+    flex: 0 0 auto;
 }
 
 .toolbar-header-inner {
@@ -3208,10 +3273,15 @@ a:focus {
     transition: var(--transition);
 }
 
-.toolbar-header-buttons ul li a:hover {
+.toolbar-header-buttons ul li a:hover,
+.toolbar-link-copy.active {
     background: var(--green-color);
     border-color: var(--green-color);
     color: var(--white-color);
+}
+
+.toolbar-link-copy.active i {
+    font-weight: 900;
 }
 
 .toolbar-content-box {
@@ -3228,15 +3298,20 @@ a:focus {
 }
 
 .toolbar-mobile-frame {
-    display: block;
-    /* max-width: 39vh; */
-    max-width: 370px;
-    width: 100%;
+    width: 370px;
     height: 730px;
     background-color: var(--body-color);
-    border: 18px solid var(--dark-color);
+    border: 18px solid var(--fulldark-color);
     border-radius: 30px;
     position: relative;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 20px 15px;
 }
 
 .toolbar-mf-bg {
@@ -3247,16 +3322,24 @@ a:focus {
     height: 100%;
     background-color: var(--body-color);
     border-radius: 10px;
-    z-index: 1;
+    z-index: -1;
 }
 
 .toolbar-mf-box {
-    height: 100%;
-    padding: 20px 15px;
+    flex: 1;
     position: relative;
     z-index: 2;
-    overflow-x: hidden;
-    overflow-y: auto;
+}
+
+.toolbar-mf-logo {
+    flex: 0 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.toolbar-mf-logo a {
+    width: 100px;
+    display: inline-block;
 }
 
 .toolbar-mf-header {
@@ -3271,9 +3354,7 @@ a:focus {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -65px;
+    margin: -65px auto 0;
 }
 
 .toolbar-mf-header-content .h4-title {
@@ -3304,25 +3385,36 @@ a:focus {
     margin-bottom: 0;
 }
 
-.toolbar-mf-button-group ul li a {
+.toolbar-def-btn {
     width: 100%;
-    min-height: 56px;
-    display: inline-flex;
+    min-height: 60px;
+    padding: 15px 30px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+
+/* .toolbar-def-btn:hover {
+    transform: scale(0.97);
+} */
+
+.toolbar-white-btn {
     background: var(--white-color);
     color: var(--fulldark-color);
     border-radius: 30px;
-    padding: 10px 10px;
-    font-weight: 700;
-    transition: var(--transition);
-    box-shadow: var(--box-shadow);
 }
 
-.toolbar-mf-button-group ul li a:hover {
-    background: var(--green-color);
-    color: var(--white-color);
-    transform: scale(0.95);
+.toolbar-oflow-btn {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    white-space: normal;
 }
 
 .toolbar-mf-social-group {
@@ -3336,11 +3428,8 @@ a:focus {
 
 .toolbar-mf-social-group ul li a {
     color: var(--white-color);
-    border-radius: 50%;
     font-weight: 700;
-    transition: var(--transition);
     font-size: 24px;
-    box-shadow: var(--box-shadow);
     width: 50px;
     height: 50px;
     display: inline-flex;
@@ -3350,8 +3439,72 @@ a:focus {
 }
 
 .toolbar-mf-social-group ul li a:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
+
+.toolbar-btn-img-wp {
+    padding: 15px 60px;
+}
+
+.toolbar-btn-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    overflow: hidden;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    left: 8px;
+}
+
+.toolbar-btn-img.toolbar-btn-icon {
+    background-color: currentcolor;
+    -webkit-mask-size: 100%;
+}
+
+.toolbar-btn-img img {
+    width: auto;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: initial;
+}
+
+
+/* --- page-view-section start --- */
+
+.page-view-section {
+    min-height: 100vh;
+    height: 100%;
+    padding: 50px 15px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+
+.page-view-section .toolbar-mf-bg {
+    border-radius: 0;
+}
+
+.page-view-section .sec-wp,
+.page-view-section .container,
+.page-view-section .container .row,
+.page-view-section .container .row [class*=col-],
+.page-view-section .page-view-box-wp {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    height: 100%;
+}
+
+
+/* --- page-view-section end--- */
 
 
 /*==========Toolbar CSS End==========*/
@@ -4825,7 +4978,7 @@ a:focus {
     border-radius: 15px;
     background: var(--white-color);
     box-shadow: var(--box-shadow);
-    flex: 0 0 80px;
+    flex: 0 0 auto;
     margin-right: 30px;
 }
 

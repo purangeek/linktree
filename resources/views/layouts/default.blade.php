@@ -54,7 +54,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="site-branding">
-                                    <a href="index.php"><img src="assets/images/linktree-logo.svg" alt="linktree-logo"></a>
+                                    <a href="index.php"><img src="assets/images/linktree-color-logo.svg" alt="linktree-color-logo"></a>
                                 </div>
                             </div>
                         </div>

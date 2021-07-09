@@ -10,6 +10,13 @@ $(document).ready(function() {
     });
     // Search JS End
 
+    // Link Copy Start
+    $(".toolbar-link-copy").on('click', function() {
+        $(this).toggleClass('active');
+    });
+    // Link Copy End
+
+
     // Accordion JS End
     jQuery('.accordion .faq-content').hide();
     jQuery('.accordion > div:eq(0) h3').addClass('active-faq');
@@ -39,11 +46,18 @@ $(document).ready(function() {
             jQuery(this).parent().addClass('active');
         }
     });
+
+    $(".addlink-more-box-btn").on('click', function() {
+        $(this).toggleClass('active');
+        $(".addlink-more-actions").toggleClass("active");
+    });
     // Addlink JS End
 
     // Add New Module JS Start
     $(".add-module-plus-btn").on('click', function() {
-        $(".add-new-module-wp").toggleClass('active');
+        // $(this).toggleClass('active');
+        $(".add-module-item").toggleClass('active');
+        $(".add-new-modules-box").slideToggle("fast");
     });
     // Add New Module JS End
 
@@ -96,17 +110,15 @@ $(document).ready(function() {
         $(this).addClass('tab-active');
         var child_tab = jQuery(this).attr('data-child-tab');
         $(".tab-box").hide();
-        $("." + child_tab).show();
+        $("." + child_tab).css('display', 'flex');
     });
 
     $(".themes-tab-box li.link-item").click(function() {
         $(".themes-tab-box li.link-item").removeClass('active');
         $(this).addClass('active');
         var list_child_tab = jQuery(this).attr('data-child-tab');
-        $(".tab-box-inner").hide();
-        $(".tab-box-inner." + list_child_tab).show();
+        $(".tab-inner-box").hide();
+        $(".tab-inner-box." + list_child_tab).show();
     });
-
-
 
 });
