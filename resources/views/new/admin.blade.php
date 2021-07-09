@@ -1293,8 +1293,7 @@
     </div>
 </div>
 
-<!-- Jquery JS Link -->
-<script src="{{ asset('assets/js/jquery-3.5.1.min.js') }}"></script>
+
 <script>
     jQuery(document).ready(function($) {
         $(".add-new-module-link").click(function() {
