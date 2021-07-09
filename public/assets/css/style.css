@@ -2017,10 +2017,9 @@ a:focus {
     flex-direction: column;
 }
 
-
-/* .tab-box.themes-tab-box {
+.tab-box.themes-tab-box {
     display: none;
-} */
+}
 
 .tab-inner-box.background-inner-box {
     display: none;
