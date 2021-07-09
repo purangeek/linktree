@@ -1,5 +1,6 @@
 @extends('new.header')
 @section('content-new')
+
 <div class="body-wp">
     <div class="body-inner">
         <div class="main-wrap">
