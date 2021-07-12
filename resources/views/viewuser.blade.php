@@ -108,7 +108,10 @@
                                 </div>
                             </div>
                             <div class="toolbar-mf-logo">
-                                <a href="#"><img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo"></a>
+                                <a href="#">
+                                    <img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo" class="toolbar-color-logo">
+                                    <img src="{{ asset('assets/images/linktree-white-logo.svg') }}" alt="linktree-white-logo" class="toolbar-white-logo active">
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -2856,11 +2856,15 @@ a:focus {
     overflow: hidden;
 }
 
+.arrowright {
+    padding: 15px 50px;
+}
+
 .arrowright span {
     margin-left: -20px;
 }
 
-.arrowright:before {
+.arrowright:after {
     content: '\f054';
     position: absolute;
     top: 0;
@@ -2961,7 +2965,7 @@ a:focus {
     height: 100%;
     top: 5px;
     left: 5px;
-    border: 2px solid var(--green-color);
+    border: 2px solid var(--fulldark-color);
     z-index: -1;
 }
 
@@ -3333,6 +3337,14 @@ a:focus {
     display: inline-block;
 }
 
+.toolbar-mf-logo a img.active {
+    display: inline-block;
+}
+
+.toolbar-mf-logo a img {
+    display: none;
+}
+
 .toolbar-mf-header {
     text-align: center;
     background: rgb(255 255 255 / 20%);
@@ -3499,6 +3511,18 @@ a:focus {
 
 
 /*==========Toolbar CSS End==========*/
+
+
+/*==========Toolbar Themes CSS Start==========*/
+
+
+/* --- theme 1 start--- */
+
+
+/* --- theme 1 end--- */
+
+
+/*==========Toolbar Themes CSS End==========*/
 
 
 /*==========Main Header CSS Start==========*/

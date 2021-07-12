@@ -1250,10 +1250,10 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill torn-edges"><span>Facebook</span></a>
+                                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill arrowright round overflow-hide"><span>Facebook</span></a>
+                                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
                                 </li>
                                 <li>
                                     <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
@@ -1275,7 +1275,10 @@
                         </div>
                     </div>
                     <div class="toolbar-mf-logo">
-                        <a href="#"><img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo"></a>
+                        <a href="#">
+                            <img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo" class="toolbar-color-logo">
+                            <img src="{{ asset('assets/images/linktree-white-logo.svg') }}" alt="linktree-white-logo" class="toolbar-white-logo active">
+                        </a>
                     </div>
                 </div>
             </div>
