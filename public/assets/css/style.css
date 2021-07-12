@@ -2585,9 +2585,10 @@ a:focus {
     margin-bottom: 30px;
 }
 
-.theme-box.active {
+
+/* .theme-box.active {
     background: var(--green-color);
-}
+} */
 
 .tab-sub-title {
     margin-bottom: 15px;
