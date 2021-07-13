@@ -1129,9 +1129,9 @@ h6 {
     font-size: 18px;
     line-height: 1.3;
     font-weight: 400;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30) inset;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30) inset;
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.30) inset;
+    box-shadow: 0px 0px 5px 0px rgba(var(--black-color-rgb), 0.30) inset;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(var(--black-color-rgb), 0.30) inset;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(var(--black-color-rgb), 0.30) inset;
 }
 
 
@@ -1153,7 +1153,7 @@ h6 {
     --dark-color: #707070;
     --fulldark-color: #282f37;
     --red-color: #ff0000;
-    --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
+    --box-shadow: 0 3px 10px rgba(var(--black-color-rgb), 0.16);
     --transition: 0.5s;
     --input-color: var(--fulldark-color);
     --body-font: 'Poppins';
@@ -1163,6 +1163,8 @@ h6 {
     --blue-color-rgb: 41, 83, 232;
     --green-color-rgb: 15, 202, 147;
     --input-color-rgb: 40, 47, 55;
+    --white-color-rgb: 255, 255, 255;
+    --black-color-rgb: 0, 0, 0;
 }
 
 .grecaptcha-badge {
@@ -1693,7 +1695,7 @@ a:focus {
 }
 
 .main-navigation .menu ul ul {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px rgba(var(--black-color-rgb), 0.2);
     float: left;
     position: absolute;
     top: 100%;
@@ -3365,7 +3367,7 @@ a:focus {
 
 .toolbar-mf-header {
     text-align: center;
-    background: rgb(255 255 255 / 20%);
+    background: rgba(var(--white-color-rgb), 0.2);
     border-radius: 10px;
     padding: 15px;
     margin: 50px 0 20px 0;
@@ -3449,7 +3451,7 @@ a:focus {
 
 .toolbar-mf-social-group ul li {
     display: inline-block;
-    margin: 0 5px 5px;
+    padding: 0 5px 5px;
 }
 
 .toolbar-mf-social-group ul li a {
@@ -3869,7 +3871,7 @@ a:focus {
     transform: translate(-50%, -50%);
     width: 100vw;
     height: 2px;
-    background-image: linear-gradient(to right, var(--blue-color) 33%, rgba(255, 255, 255, 1) 80%);
+    background-image: linear-gradient(to right, var(--blue-color) 33%, var(--white-color) 80%);
     background-position: center;
     background-size: 15px 2px;
     background-repeat: repeat-x;
@@ -4436,9 +4438,9 @@ a:focus {
 }
 
 .blog-box:hover {
-    box-shadow: 0px 0 30px -5px rgb(0 0 0 / 16%);
-    -webkit-box-shadow: 0px 0 30px -5px rgb(0 0 0 / 16%);
-    -moz-box-shadow: 0px 0 30px -5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 0 30px -5px rgb(var(--black-color-rgb), 0.16);
+    -webkit-box-shadow: 0px 0 30px -5px rgb(var(--black-color-rgb), 0.16);
+    -moz-box-shadow: 0px 0 30px -5px rgba(var(--black-color-rgb), 0.16);
 }
 
 .blog-box-inner {
@@ -4832,7 +4834,7 @@ a:focus {
     bottom: 0;
     right: 0;
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, rgba(0, 0, 0, 0.60) 100%);
+    background: linear-gradient(180deg, rgba(var(--white-color-rgb), 0) 70%, rgba(var(--black-color-rgb), 0.6) 100%);
     z-index: 1;
 }
 
@@ -5044,7 +5046,7 @@ a:focus {
     left: 8%;
     width: 2px;
     height: 100%;
-    background-image: linear-gradient(to bottom, var(--blue-color) 33%, rgba(255, 255, 255, 1) 80%);
+    background-image: linear-gradient(to bottom, var(--blue-color) 33%, var(--white-color) 80%);
     background-position: top;
     background-size: 2px 15px;
     background-repeat: repeat-y;
@@ -5058,7 +5060,7 @@ a:focus {
     right: 8%;
     width: 2px;
     height: 100%;
-    background-image: linear-gradient(to top, var(--blue-color) 33%, rgba(255, 255, 255, 1) 80%);
+    background-image: linear-gradient(to top, var(--blue-color) 33%, var(--white-color) 80%);
     background-position: top;
     background-size: 2px 15px;
     background-repeat: repeat-y;
@@ -5595,7 +5597,7 @@ button.close:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(var(--black-color-rgb), 0.3);
     z-index: 5;
     display: flex;
     align-items: center;
@@ -5864,7 +5866,7 @@ button.close:hover {
     height: 46px;
     width: 100%;
     outline: none;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .06);
+    box-shadow: 0 0 20px rgba(var(--black-color-rgb), 0.06);
     padding: 15px
 }
 

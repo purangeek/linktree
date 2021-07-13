@@ -26,18 +26,18 @@
                             </a>
                         </li>
                         <li class="sidebar--profile">
-                            <a href="#">
+                            <a href="/admin">
                                 <div class="sidebar--profile-img back-img" style="background-image: url({{ asset('assets/images/default-profile-picture.png') }});"></div>
                             </a>
                             <div class="sidebar--dropdown-nav">
-                                <div class="sidebar--dropdown-nav--divider">KaranGeek</div>
+                                <div class="sidebar--dropdown-nav--divider">DivyangGeek</div>
                                 <ul>
                                     <li><a href="#">My Account</a></li>
                                     <li><a href="#">Logout</a></li>
                                 </ul>
                                 <div class="sidebar--dropdown-nav--divider">TREES</div>
                                 <ul>
-                                    <li class="active-account"><a href="#">@KaranGeek <i class="fas fa-star"></i></a></li>
+                                    <li class="active-account"><a href="/admin">@divyanggeek<i class="fas fa-star"></i></a></li>
                                 </ul>
                             </div>
                         </li>
