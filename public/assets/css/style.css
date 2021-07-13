@@ -1807,18 +1807,27 @@ a:focus {
     text-align: center;
 }
 
-.sidebar-nav ul.sidebar-nav-list>li {
-    margin-bottom: 25px;
-    position: relative;
+.sidebar-nav .sidebar-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.sidebar-nav ul.sidebar-nav-list>li:last-child {
+.sidebar-nav .sidebar-nav-list>li {
+    margin-bottom: 25px;
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+
+.sidebar-nav .sidebar-nav-list>li:last-child {
     margin-bottom: 0;
 }
 
-.sidebar-nav ul.sidebar-nav-list>li>a {
-    width: 44px;
-    height: 44px;
+.sidebar-nav .sidebar-nav-list>li>a {
+    width: 100%;
+    height: 100%;
     font-size: 24px;
     display: inline-flex;
     justify-content: center;
@@ -1829,19 +1838,19 @@ a:focus {
     transition: var(--transition);
 }
 
-.sidebar-nav ul.sidebar-nav-list>li>a:hover,
-.sidebar-nav ul.sidebar-nav-list>li.active a {
+.sidebar-nav .sidebar-nav-list>li>a:hover,
+.sidebar-nav .sidebar-nav-list>li.active a {
     background: var(--blue-color);
     color: var(--white-color);
 }
 
-.sidebar-nav ul.sidebar-nav-list>li>a:hover svg,
-.sidebar-nav ul.sidebar-nav-list>li.active a svg {
+.sidebar-nav .sidebar-nav-list>li>a:hover svg,
+.sidebar-nav .sidebar-nav-list>li.active a svg {
     fill: var(--white-color);
     color: var(--white-color);
 }
 
-.sidebar-nav ul.sidebar-nav-list>li>a svg {
+.sidebar-nav .sidebar-nav-list>li>a svg {
     transition: var(--transition);
     fill: var(--fulldark-color);
     color: var(--fulldark-color);
@@ -1853,7 +1862,7 @@ a:focus {
     border-radius: 10px;
 }
 
-.sidebar-nav ul.sidebar-nav-list>li.sidebar--profile>a {
+.sidebar-nav .sidebar-nav-list>li.sidebar--profile {
     width: 50px;
     height: 50px;
 }
@@ -1925,7 +1934,7 @@ a:focus {
     color: #ffca00;
 }
 
-.sidebar-nav ul.sidebar-nav-list>li.sidebar--profile:hover .sidebar--dropdown-nav {
+.sidebar-nav .sidebar-nav-list>li.sidebar--profile:hover .sidebar--dropdown-nav {
     opacity: 1;
     visibility: visible;
 }
