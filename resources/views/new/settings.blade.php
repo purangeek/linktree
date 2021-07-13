@@ -186,9 +186,9 @@
                                     <li>
                                         <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn toolbar-btn-img-wp">
                                             <span>Button</span>
-                                            <span class="toolbar-btn-img">
+                                            <div class="toolbar-btn-img">
                                                 <img src="{{ asset('assets/images/default-profile-picture.png') }}" alt="default-profile-picture">
-                                            </span>
+                                            </div>
                                             <!-- <span class="toolbar-btn-img toolbar-btn-icon" style="-webkit-mask-image: url('{{ asset('assets/images/default-profile-picture.png') }}');"></span> -->
                                         </a>
                                     </li>

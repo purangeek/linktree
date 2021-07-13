@@ -1348,14 +1348,14 @@
                 </div>
             </div>
             <div class="toolbar-content-box">
-                <div class="toolbar-mobile-frame back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_1_mob.jpg') }});">
+                <div class="toolbar-mobile-frame back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_2_mob.jpg') }});">
                     <div class="toolbar-mobile-frame-inr">
                         <div class="toolbar-mf-box">
-                            <div class="toolbar-mf-header">
+                            <div class="toolbar-mf-header toolbar-mf-header-fulldark">
                                 <div class="toolbar-mf-prof-image back-img" style="background-image: url({{ asset('assets/images/default-profile-picture.png') }});"></div>
                                 <div class="toolbar-mf-header-content">
-                                    <h4 class="h4-title white-color">Divyang</h4>
-                                    <div class="toolbar-mf-header-text white-color">
+                                    <h4 class="h4-title fulldark-color">Divyang</h4>
+                                    <div class="toolbar-mf-header-text fulldark-color">
                                         <p>description</p>
                                     </div>
                                 </div>
@@ -1363,30 +1363,30 @@
                             <div class="toolbar-mf-button-group">
                                 <ul>
                                     <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn toolbar-btn-img-wp">
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill torn-edges toolbar-btn-img-wp">
                                             <span>Button</span>
-                                            <span class="toolbar-btn-img">
+                                            <div class="toolbar-btn-img">
                                                 <img src="{{ asset('assets/images/default-profile-picture.png') }}" alt="default-profile-picture">
-                                            </span>
+                                            </div>
                                             <!-- <span class="toolbar-btn-img toolbar-btn-icon" style="-webkit-mask-image: url('{{ asset('assets/images/default-profile-picture.png') }}');"></span> -->
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Button</span></a>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill torn-edges"><span>Button</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Button</span></a>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill torn-edges"><span>Button</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Button</span></a>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill torn-edges"><span>Button</span></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="toolbar-mf-social-group">
                                 <ul>
-                                    <li><a href="#" class="toolbar-mf-social-btn white-color"><i class="fas fa-envelope"></i></a></li>
-                                    <li><a href="#" class="toolbar-mf-social-btn white-color"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#" class="toolbar-mf-social-btn white-color"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn fulldark-color"><i class="fas fa-envelope"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn fulldark-color"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn fulldark-color"><i class="fab fa-twitter"></i></a></li>
                                     <!-- <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-instagram"></i></a></li>
                                     <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-youtube"></i></a></li>
@@ -1413,7 +1413,8 @@
                         <div class="toolbar-mf-logo">
                             <a href="#">
                                 <img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo" class="toolbar-color-logo">
-                                <img src="{{ asset('assets/images/linktree-white-logo.svg') }}" alt="linktree-white-logo" class="toolbar-white-logo active">
+                                <img src="{{ asset('assets/images/linktree-white-logo.svg') }}" alt="linktree-white-logo" class="toolbar-white-logo">
+                                <img src="{{ asset('assets/images/linktree-dark-logo.svg') }}" alt="linktree-dark-logo" class="toolbar-dark-logo active">
                             </a>
                         </div>
                     </div>
@@ -1424,7 +1425,7 @@
 </div>
 
 
-<script>
+<!-- <script>
     jQuery(document).ready(function($) {
         $(".add-new-module-link").click(function() {
             $.ajax({
@@ -1515,6 +1516,6 @@
             });
         });
     });
-</script>
+</script> -->
 
 @endsection

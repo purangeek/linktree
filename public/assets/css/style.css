@@ -1165,6 +1165,7 @@ h6 {
     --input-color-rgb: 40, 47, 55;
     --white-color-rgb: 255, 255, 255;
     --black-color-rgb: 0, 0, 0;
+    --fulldark-color-rgb: 40, 47, 55;
 }
 
 .grecaptcha-badge {
@@ -1346,10 +1347,6 @@ a:focus {
     cursor: pointer;
     opacity: 0;
     text-indent: -9999px;
-}
-
-.white-color {
-    color: var(--white-color);
 }
 
 
@@ -1962,7 +1959,6 @@ a:focus {
 
 .action-area-wp::-webkit-scrollbar-track {
     border-right-width: 0;
-    border-top-width: 0;
 }
 
 .action-area-wrap {
@@ -3372,7 +3368,7 @@ a:focus {
 
 .toolbar-mf-header {
     text-align: center;
-    background: rgba(var(--white-color-rgb), 0.2);
+    background: rgba(var(--white-color-rgb), 0.1);
     border-radius: 10px;
     padding: 15px;
     margin: 50px 0 20px 0;
@@ -3501,8 +3497,44 @@ a:focus {
     object-position: initial;
 }
 
+.toolbar-mf-header-fulldark {
+    background: rgba(var(--fulldark-color-rgb), 0.1);
+}
+
 
 /*==========Toolbar CSS End==========*/
+
+
+/*==========Toolbar Themes CSS Start==========*/
+
+
+/* --- theme 1 start--- */
+
+.toolbar-white-btn {
+    background: var(--white-color);
+    color: var(--fulldark-color);
+    border-radius: 30px;
+}
+
+.white-color {
+    color: var(--white-color);
+}
+
+
+/* --- theme 1 end--- */
+
+
+/* --- theme 2 start--- */
+
+.fulldark-color {
+    color: var(--fulldark-color);
+}
+
+
+/* --- theme 2 end--- */
+
+
+/*==========Toolbar Themes CSS End==========*/
 
 
 /*==========Page View Section CSS start==========*/
@@ -3533,24 +3565,6 @@ a:focus {
 
 
 /*==========Page View Section CSS End==========*/
-
-
-/*==========Toolbar Themes CSS Start==========*/
-
-
-/* --- theme 1 start--- */
-
-.toolbar-white-btn {
-    background: var(--white-color);
-    color: var(--fulldark-color);
-    border-radius: 30px;
-}
-
-
-/* --- theme 1 end--- */
-
-
-/*==========Toolbar Themes CSS End==========*/
 
 
 /*==========Main Header CSS Start==========*/
