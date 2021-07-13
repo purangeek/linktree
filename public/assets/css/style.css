@@ -1286,7 +1286,7 @@ a:focus {
 }
 
 ::selection {
-    background: var(--blue-color);
+    background: var(--green-color);
     color: var(--white-color);
 }
 
@@ -1346,6 +1346,10 @@ a:focus {
     cursor: pointer;
     opacity: 0;
     text-indent: -9999px;
+}
+
+.white-color {
+    color: var(--white-color);
 }
 
 
@@ -1957,7 +1961,8 @@ a:focus {
 }
 
 .action-area-wp::-webkit-scrollbar-track {
-    border-left-width: 2px;
+    border-right-width: 0;
+    border-top-width: 0;
 }
 
 .action-area-wrap {
@@ -3381,13 +3386,12 @@ a:focus {
 }
 
 .toolbar-mf-header-content .h4-title {
-    color: var(--white-color);
     margin-bottom: 2px;
 }
 
 .toolbar-mf-header-text p {
     margin-bottom: 0;
-    color: var(--white-color);
+    color: currentColor;
 }
 
 .toolbar-mf-header-content {
@@ -3426,12 +3430,6 @@ a:focus {
     transform: scale(0.95);
 }
 
-.toolbar-white-btn {
-    background: var(--white-color);
-    color: var(--fulldark-color);
-    border-radius: 30px;
-}
-
 .toolbar-oflow-btn {
     overflow-wrap: break-word;
     word-break: break-word;
@@ -3455,7 +3453,6 @@ a:focus {
 }
 
 .toolbar-mf-social-group ul li a {
-    color: var(--white-color);
     font-weight: 700;
     font-size: 24px;
     width: 35px;
@@ -3505,7 +3502,10 @@ a:focus {
 }
 
 
-/* --- page-view-section start --- */
+/*==========Toolbar CSS End==========*/
+
+
+/*==========Page View Section CSS start==========*/
 
 .page-view-section {
     min-height: 100vh;
@@ -3532,16 +3532,19 @@ a:focus {
 }
 
 
-/* --- page-view-section end--- */
-
-
-/*==========Toolbar CSS End==========*/
+/*==========Page View Section CSS End==========*/
 
 
 /*==========Toolbar Themes CSS Start==========*/
 
 
 /* --- theme 1 start--- */
+
+.toolbar-white-btn {
+    background: var(--white-color);
+    color: var(--fulldark-color);
+    border-radius: 30px;
+}
 
 
 /* --- theme 1 end--- */
