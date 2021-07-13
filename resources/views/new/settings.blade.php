@@ -10,7 +10,7 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="site-branding">
-                                <a href="index.php"><img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo"></a>
+                                <a href="/admin"><img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo"></a>
                             </div>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                 <div class="sidebar-nav">
                     <ul class="sidebar-nav-list">
                         <li class="sidebar--setting">
-                            <a href="setting.php">
+                            <a href="/admin/settings">
                                 <i class="fas fa-cog"></i>
                             </a>
                         </li>
@@ -87,14 +87,6 @@
                                     <input type="text" id="bandcamp_url" placeholder="https://you.bandcamp.com/" class="form-input">
                                 </div>
                                 <div class="form-input-span">
-                                    <label for="clubhouse_url" class="form-label">Clubhouse URL</label>
-                                    <input type="text" id="clubhouse_url" placeholder="https://clubhouse.com/@profile" class="form-input">
-                                </div>
-                                <div class="form-input-span">
-                                    <label for="substack_url" class="form-label">Substack URL</label>
-                                    <input type="text" id="substack_url" placeholder="https://you.substack.com" class="form-input">
-                                </div>
-                                <div class="form-input-span">
                                     <label for="whatsapp_url" class="form-label">WhatsApp</label>
                                     <input type="text" id="whatsapp_url" placeholder="+00000000000" class="form-input">
                                 </div>
@@ -103,20 +95,12 @@
                                     <input type="text" id="telegram_url" placeholder="https://t.me/" class="form-input">
                                 </div>
                                 <div class="form-input-span">
-                                    <label for="signal_url" class="form-label">Signal URL</label>
-                                    <input type="text" id="signal_url" placeholder="https://signal.group/" class="form-input">
-                                </div>
-                                <div class="form-input-span">
                                     <label for="twitch_url" class="form-label">Twitch URL</label>
                                     <input type="text" id="twitch_url" placeholder="https://twitch.tv/" class="form-input">
                                 </div>
                                 <div class="form-input-span">
                                     <label for="patreon_url" class="form-label">Patreon URL</label>
                                     <input type="text" id="patreon_url" placeholder="https://patreon.com/" class="form-input">
-                                </div>
-                                <div class="form-input-span">
-                                    <label for="cameo_url" class="form-label">Cameo URL</label>
-                                    <input type="text" id="cameo_url" placeholder="https://cameo.com/" class="form-input">
                                 </div>
                                 <div class="form-input-span">
                                     <label for="pinterest_url" class="form-label">Pinterest URL</label>
@@ -162,10 +146,6 @@
                                     <label for="etsy_url" class="form-label">Etsy URL</label>
                                     <input type="text" id="etsy_url" placeholder="https://www.etsy.com/shop/yourshop" class="form-input">
                                 </div>
-                                <div class="form-input-span">
-                                    <label for="poshmark_url" class="form-label">Poshmark URL</label>
-                                    <input type="text" id="poshmark_url" placeholder="https://poshmark.com/closet/yourcloset" class="form-input">
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -190,54 +170,73 @@
             </div>
             <div class="toolbar-content-box">
                 <div class="toolbar-mobile-frame back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_1_mob.jpg') }});">
-                    <div class="toolbar-mf-box">
-                        <div class="toolbar-mf-header">
-                            <div class="toolbar-mf-prof-image back-img" style="background-image: url(assets/images/default-profile-picture.png);"></div>
-                            <div class="toolbar-mf-header-content">
-                                <h4 class="h4-title">Divynag</h4>
-                                <div class="toolbar-mf-header-text">
-                                    <p>description</p>
+                    <div class="toolbar-mobile-frame-inr">
+                        <div class="toolbar-mf-box">
+                            <div class="toolbar-mf-header">
+                                <div class="toolbar-mf-prof-image back-img" style="background-image: url({{ asset('assets/images/default-profile-picture.png') }});"></div>
+                                <div class="toolbar-mf-header-content">
+                                    <h4 class="h4-title">Divyang</h4>
+                                    <div class="toolbar-mf-header-text">
+                                        <p>description</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="toolbar-mf-button-group">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn toolbar-btn-img-wp">
+                                            <span>Button</span>
+                                            <span class="toolbar-btn-img">
+                                                <img src="{{ asset('assets/images/default-profile-picture.png') }}" alt="default-profile-picture">
+                                            </span>
+                                            <!-- <span class="toolbar-btn-img toolbar-btn-icon" style="-webkit-mask-image: url('{{ asset('assets/images/default-profile-picture.png') }}');"></span> -->
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Button</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Button</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Button</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="toolbar-mf-social-group">
+                                <ul>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fas fa-envelope"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-twitter"></i></a></li>
+                                    <!-- <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-soundcloud"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-bandcamp"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-twitch"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-patreon"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-tiktok"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-spotify"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-amazon"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fas fa-music"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-snapchat-ghost"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fas fa-podcast"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-app-store"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-google-play"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fas fa-dollar-sign"></i></a></li>
+                                    <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-etsy"></i></a></li> -->
+                                </ul>
+                            </div>
                         </div>
-                        <div class="toolbar-mf-button-group">
-                            <ul>
-                                <li>
-                                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn toolbar-btn-img-wp">
-                                        <span>Facebook</span>
-                                        <span class="toolbar-btn-img">
-                                            <img src="{{ asset('assets/images/default-profile-picture.png') }}" alt="default-profile-picture">
-                                        </span>
-                                        <!-- <span class="toolbar-btn-img toolbar-btn-icon" style="-webkit-mask-image: url('{{ asset('assets/images/default-profile-picture.png') }}');"></span> -->
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill torn-edges"><span>Facebook</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn btnfill arrowright round overflow-hide"><span>Facebook</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
-                                </li>
-                            </ul>
+                        <div class="toolbar-mf-logo">
+                            <a href="#">
+                                <img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo" class="toolbar-color-logo">
+                                <img src="{{ asset('assets/images/linktree-white-logo.svg') }}" alt="linktree-white-logo" class="toolbar-white-logo active">
+                            </a>
                         </div>
-                        <div class="toolbar-mf-social-group">
-                            <ul>
-                                <li>
-                                    <a href="#" class="toolbar-mf-social-btn"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="toolbar-mf-social-btn"><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="toolbar-mf-social-btn"><i class="far fa-envelope"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="toolbar-mf-logo">
-                        <a href="#"><img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo"></a>
                     </div>
                 </div>
             </div>

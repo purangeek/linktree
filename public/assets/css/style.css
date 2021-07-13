@@ -3287,9 +3287,6 @@ a:focus {
     border-top: none;
     overflow: auto;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .toolbar-mobile-frame {
@@ -3298,15 +3295,27 @@ a:focus {
     background-color: var(--body-color);
     border: 18px solid var(--fulldark-color);
     border-radius: 30px;
-    position: relative;
-    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    margin: 0;
+}
+
+.toolbar-mobile-frame-inr {
+    padding: 20px 15px;
     overflow-x: hidden;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 2;
-    padding: 20px 15px;
+    height: 100%;
+    width: 100%;
 }
 
 .toolbar-mf-bg {
@@ -3398,14 +3407,13 @@ a:focus {
     position: relative;
     font-size: 16px;
     line-height: 26px;
-    font-weight: 700;
+    font-weight: 600;
     transition: var(--transition);
 }
 
-
-/* .toolbar-def-btn:hover {
-    transform: scale(0.97);
-} */
+.toolbar-def-btn:hover {
+    transform: scale(0.95);
+}
 
 .toolbar-white-btn {
     background: var(--white-color);
@@ -3420,21 +3428,27 @@ a:focus {
     white-space: normal;
 }
 
-.toolbar-mf-social-group {
-    text-align: center;
+.toolbar-mf-social-group ul {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
 }
 
 .toolbar-mf-social-group ul li {
     display: inline-block;
-    margin: 0 10px 10px;
+    margin: 0 5px 5px;
 }
 
 .toolbar-mf-social-group ul li a {
     color: var(--white-color);
     font-weight: 700;
     font-size: 24px;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -3442,7 +3456,7 @@ a:focus {
 }
 
 .toolbar-mf-social-group ul li a:hover {
-    transform: scale(0.95);
+    transform: scale(0.90);
 }
 
 .toolbar-btn-img-wp {
