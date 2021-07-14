@@ -1166,6 +1166,14 @@ h6 {
     --white-color-rgb: 255, 255, 255;
     --black-color-rgb: 0, 0, 0;
     --fulldark-color-rgb: 40, 47, 55;
+    /* Theme Root Start */
+    --toolbar-header-bg-color: #fd9921;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-bg-color: #fc5b25;
+    --toolbar-button-text-color: #ffffff;
+    --toolbar-social-color: #18a795;
+    --toolbar-logo-bg-color: #ffffff;
+    /* Theme Root End */
 }
 
 .grecaptcha-badge {
@@ -3354,24 +3362,32 @@ a:focus {
 }
 
 .toolbar-mf-logo a {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.toolbar-mf-logo .toolbar-mf-logo-img {
     width: 100px;
-    display: inline-block;
-}
-
-.toolbar-mf-logo a img.active {
-    display: inline-block;
-}
-
-.toolbar-mf-logo a img {
-    display: none;
+    height: 23px;
+    display: block;
+    background-color: var(--toolbar-logo-bg-color);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-position: 0 top;
+    mask-position: 0 top;
+    -webkit-mask-image: url('../images/linktree-color-logo.svg');
+    mask-image: url('../images/linktree-color-logo.svg');
 }
 
 .toolbar-mf-header {
     text-align: center;
-    background: rgba(var(--white-color-rgb), 0.1);
     border-radius: 10px;
     padding: 15px;
     margin: 50px 0 20px 0;
+    background: var(--toolbar-header-bg-color);
+    box-shadow: 0 0 10px 0 rgba(var(--black-color-rgb), 0.16);
+    transition: var(--transition);
 }
 
 .toolbar-mf-prof-image {
@@ -3383,11 +3399,12 @@ a:focus {
 
 .toolbar-mf-header-content .h4-title {
     margin-bottom: 2px;
+    color: var(--toolbar-header-text-color);
 }
 
 .toolbar-mf-header-text p {
     margin-bottom: 0;
-    color: currentColor;
+    color: var(--toolbar-header-text-color);
 }
 
 .toolbar-mf-header-content {
@@ -3420,6 +3437,8 @@ a:focus {
     line-height: 26px;
     font-weight: 600;
     transition: var(--transition);
+    background: var(--toolbar-button-bg-color);
+    color: var(--toolbar-button-text-color);
 }
 
 .toolbar-def-btn:hover {
@@ -3457,6 +3476,7 @@ a:focus {
     align-items: center;
     justify-content: center;
     transition: var(--transition);
+    color: var(--toolbar-social-color);
 }
 
 .toolbar-mf-social-group ul li a:hover {
@@ -3497,10 +3517,6 @@ a:focus {
     object-position: initial;
 }
 
-.toolbar-mf-header-fulldark {
-    background: rgba(var(--fulldark-color-rgb), 0.1);
-}
-
 
 /*==========Toolbar CSS End==========*/
 
@@ -3508,30 +3524,62 @@ a:focus {
 /*==========Toolbar Themes CSS Start==========*/
 
 
-/* --- theme 1 start--- */
+/* --- Theme 1 Start--- */
 
-.toolbar-white-btn {
-    background: var(--white-color);
-    color: var(--fulldark-color);
-    border-radius: 30px;
-}
-
-.white-color {
-    color: var(--white-color);
-}
-
-
-/* --- theme 1 end--- */
-
-
-/* --- theme 2 start--- */
-
-.fulldark-color {
-    color: var(--fulldark-color);
+.toolbar-theme-1 {
+    --toolbar-header-bg-color: #d46038;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-bg-color: #ffffff;
+    --toolbar-button-text-color: #024756;
+    --toolbar-social-color: #014655;
+    --toolbar-logo-bg-color: #ffffff;
 }
 
 
-/* --- theme 2 end--- */
+/* --- Theme 1 End--- */
+
+
+/* --- Theme 2 Start--- */
+
+.toolbar-theme-2 {
+    --toolbar-header-bg-color: #fd9921;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-bg-color: #fc5b25;
+    --toolbar-button-text-color: #ffffff;
+    --toolbar-social-color: #18a795;
+    --toolbar-logo-bg-color: #ffffff;
+}
+
+
+/* --- Theme 2 End--- */
+
+
+/* --- Theme 3 Start--- */
+
+.toolbar-theme-3 {
+    --toolbar-header-bg-color: #fd9921;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-bg-color: #fc5b25;
+    --toolbar-button-text-color: #ffffff;
+    --toolbar-social-color: #18a795;
+    --toolbar-logo-bg-color: #ffffff;
+}
+
+
+/* --- Theme 3 End--- */
+
+/* --- Theme 4 Start--- */
+
+.toolbar-theme-4 {
+    --toolbar-header-bg-color: red;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-bg-color: red;
+    --toolbar-button-text-color: #ffffff;
+    --toolbar-social-color: #000;
+}
+
+
+/* --- Theme 4 End--- */
 
 
 /*==========Toolbar Themes CSS End==========*/
