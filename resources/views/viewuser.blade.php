@@ -1,54 +1,8 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('new.header')
+@section('content-new')
 
-<head>
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+<div class="body-wp">
 
-    <title>List of Links</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Link Tree - Template">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- FavIcon Link -->
-    <!-- <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16"> -->
-
-    <!-- Bootstrap CSS Link -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- Slick Slider CSS Link -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick-theme.css') }}">
-
-    <!-- Fancybox CSS Link -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/jquery.fancybox.min.css') }}">
-
-    <!-- Simplebar CSS Link -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/simplebar.css') }}">
-
-    <!-- Wow Animation CSS Link -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/animate.min.css') }}">
-
-    <!-- Main Style CSS Link -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
-
-</head>
-
-<body>
     <section class="page-view-section">
         <div class="toolbar-mf-bg preview_img_theme_1_back back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_1_mob.jpg') }});"></div>
         <div class="sec-wp">
@@ -56,109 +10,22 @@
                 <div class="row">
                     <div class="col-lg-6 m-auto">
                         <div class="page-view-box-wp">
-                            <!-- @foreach($links as $link)
-                    <div class="link-content">
-                    <a href="{{ $link->link_url }}" target="_blank" rel="noopener noreferrer" data-testid="LinkButton" display="inline-flex" font-family="inherit" font-weight="inherit" font-size="inherit" height="auto" class="sc-fzozJi sc-pIJJz iCTckV"><p class="sc-AxhCb hFcqms">{{ $link->link_title }}</p></a>
-                    </div>
-                    @endforeach -->
-                            <div class="toolbar-mf-box">
-                                <div class="toolbar-mf-header">
-                                    <div class="toolbar-mf-prof-image back-img" style="background-image: url({{ asset('assets/images/default-profile-picture.png') }});"></div>
-                                    <div class="toolbar-mf-header-content">
-                                        <h4 class="h4-title white-color">Divyang</h4>
-                                        <div class="toolbar-mf-header-text white-color">
-                                            <p>description</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="toolbar-mf-button-group">
-                                    <ul>
-                                        <li>
-                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn toolbar-btn-img-wp">
-                                                <span>Facebook</span>
-                                                <span class="toolbar-btn-img">
-                                                    <img src="{{ asset('assets/images/default-profile-picture.png') }}" alt="default-profile-picture">
-                                                </span>
-                                                <!-- <span class="toolbar-btn-img toolbar-btn-icon" style="-webkit-mask-image: url('{{ asset('assets/images/default-profile-picture.png') }}');"></span> -->
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-white-btn"><span>Facebook</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="toolbar-mf-social-group">
-                                    <ul>
-                                        <li><a href="#" class="toolbar-mf-social-btn white-color"><i class="fas fa-envelope"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn white-color"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn white-color"><i class="fab fa-twitter"></i></a></li>
-                                        <!-- <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-youtube"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-soundcloud"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-bandcamp"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-whatsapp"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-telegram-plane"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-twitch"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-patreon"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-pinterest-p"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-tiktok"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-spotify"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-amazon"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fas fa-music"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-snapchat-ghost"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fas fa-podcast"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-app-store"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-google-play"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fas fa-dollar-sign"></i></a></li>
-                                        <li><a href="#" class="toolbar-mf-social-btn"><i class="fab fa-etsy"></i></a></li> -->
-                                    </ul>
-                                </div>
+                            {{-- @foreach($links as $link)
+                            <div class="link-content">
+                                <a href="{{ $link->link_url }}" target="_blank" rel="noopener noreferrer" data-testid="LinkButton" display="inline-flex" font-family="inherit" font-weight="inherit" font-size="inherit" height="auto" class="sc-fzozJi sc-pIJJz iCTckV"><p class="sc-AxhCb hFcqms">{{ $link->link_title }}</p></a>
                             </div>
-                            <div class="toolbar-mf-logo">
-                                <a href="#">
-                                    <img src="{{ asset('assets/images/linktree-color-logo.svg') }}" alt="linktree-color-logo" class="toolbar-color-logo">
-                                    <img src="{{ asset('assets/images/linktree-white-logo.svg') }}" alt="linktree-white-logo" class="toolbar-white-logo active">
-                                </a>
-                            </div>
+                            @endforeach --}}
+                            @include('new.toolbar_content')
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+</div>
 
-    <!-- Bootstrap JS Link -->
-    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 
-    <!-- Slick Slider JS Link -->
-    <script src="{{ asset('assets/js/slick.min.js') }}"></script>
-
-    <!-- Fancybox JS Link -->
-    <script src="{{ asset('assets/js/jquery.fancybox.min.js') }}"></script>
-
-    <!-- Simplebar JS Link -->
-    <script src="{{ asset('assets/js/simplebar.js') }}"></script>
-
-    <!-- Wow Animation JS Link -->
-    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
-
-    <!-- Font Awesome JS Link -->
-    <script src="{{ asset('assets/js/font-awesome.min.js') }}"></script>
-
-    <!-- Custom JS Link -->
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
-
-</body>
-
-</html>
-<script>
+<!-- <script>
     $(document).ready(function() {
         $("#add-link").click(function() {
             $(".links-container").append('<div class="link-content"><div class="link-field"><input type="text" class="link-title" placeholder="Enter title" value=""></div><div class="link-field"><input type="text" class="link-url" placeholder="Enter URL"  value=""></div><div class="button-container"><input type="hidden" class="link-type" val="Add"><input type="hidden" class="link-id" val=""><button type="button" class="save-link">Save</button><button type="button" class="delete-link">Delete</button></div></div>');
@@ -198,4 +65,6 @@
         });
 
     });
-</script>
+</script> -->
+
+@endsection

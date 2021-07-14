@@ -2607,7 +2607,6 @@ a:focus {
     cursor: pointer;
 }
 
-
 .theme-box.active:before {
     content: '';
     position: absolute;
@@ -2619,7 +2618,6 @@ a:focus {
     border-radius: 12px;
     transition: var(--transition);
 }
-
 
 .tab-sub-title {
     margin-bottom: 15px;
@@ -3103,25 +3101,6 @@ a:focus {
 /*==========Themes CSS End==========*/
 
 
-/*==========Preview Themes 1 CSS Start==========*/
-
-@media (min-width: 401px) {
-    .preview_img_theme_1_back {
-        background-image: url('../images/preview_img_theme_1_des.jpg') !important;
-    }
-}
-
-
-/* @media (max-width:575px) {
-    .preview_img_theme_1_back {
-        background-image: url('../images/preview_img_theme_1_mob.jpg');
-    }
-} */
-
-
-/*==========Preview Themes 1 CSS End==========*/
-
-
 /*==========Add New Module CSS Start==========*/
 
 .link-header-wp ul li.link-item.add-module-item {
@@ -3347,6 +3326,15 @@ a:focus {
     justify-content: space-between;
     height: 100%;
     width: 100%;
+}
+
+.toolbar-mf-theme-default {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    flex: 1;
 }
 
 .toolbar-mf-bg {
@@ -3579,6 +3567,7 @@ a:focus {
 
 /* --- Theme 3 End--- */
 
+
 /* --- Theme 4 Start--- */
 
 .toolbar-theme-4 {
@@ -3592,6 +3581,7 @@ a:focus {
 
 
 /* --- Theme 4 End--- */
+
 
 /* --- Theme 5 Start--- */
 
@@ -3607,6 +3597,7 @@ a:focus {
 
 /* --- Theme 5 End--- */
 
+
 /* --- Theme 6 Start--- */
 
 .toolbar-theme-6 {
@@ -3621,6 +3612,7 @@ a:focus {
 
 /* --- Theme 6 End--- */
 
+
 /* --- Theme 7 Start--- */
 
 .toolbar-theme-7 {
@@ -3629,7 +3621,7 @@ a:focus {
     --toolbar-button-bg-color: #3d3d3d;
     --toolbar-button-text-color: #ffffff;
     --toolbar-social-color: #3d3d3d;
-    --toolbar-logo-bg-color: #ffffff;
+    --toolbar-logo-bg-color: #0fca93;
 }
 
 
@@ -3664,6 +3656,36 @@ a:focus {
     flex-flow: column;
     height: 100%;
 }
+
+
+/* --- Preview Themes Start--- */
+
+@media (min-width: 401px) {
+    .preview_img_theme_1_back {
+        background-image: url('../images/preview_img_theme_1_des.jpg') !important;
+    }
+    .preview_img_theme_2_back {
+        background-image: url('../images/preview_img_theme_2_des.jpg') !important;
+    }
+    .preview_img_theme_3_back {
+        background-image: url('../images/preview_img_theme_3_des.jpg') !important;
+    }
+    .preview_img_theme_4_back {
+        background-image: url('../images/preview_img_theme_4_des.jpg') !important;
+    }
+    .preview_img_theme_5_back {
+        background-image: url('../images/preview_img_theme_5_des.jpg') !important;
+    }
+    .preview_img_theme_6_back {
+        background-image: url('../images/preview_img_theme_6_des.jpg') !important;
+    }
+    .preview_img_theme_7_back {
+        background-image: url('../images/preview_img_theme_7_des.jpg') !important;
+    }
+}
+
+
+/* --- Preview Themes End--- */
 
 
 /*==========Page View Section CSS End==========*/
