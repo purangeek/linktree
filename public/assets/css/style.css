@@ -1167,11 +1167,15 @@ h6 {
     --black-color-rgb: 0, 0, 0;
     --fulldark-color-rgb: 40, 47, 55;
     /* Theme Root Start */
-    --toolbar-header-bg-color: #fd9921;
-    --toolbar-header-text-color: #ffffff;
-    --toolbar-button-bg-color: #fc5b25;
-    --toolbar-button-text-color: #ffffff;
-    --toolbar-social-color: #18a795;
+    --toolbar-header-bg-color: #ffffff;
+    --toolbar-header-text-color: #282f37;
+    --toolbar-button-bg-color: #ffffff;
+    --toolbar-button-border-color: #ffffff;
+    --toolbar-button-text-color: #282f37;
+    --toolbar-button-bg-hover-color: transparent;
+    --toolbar-button-border-hover-color: #ffffff;
+    --toolbar-button-text-hover-color: #ffffff;
+    --toolbar-social-color: #ffffff;
     --toolbar-logo-bg-color: #ffffff;
     /* Theme Root End */
 }
@@ -3436,12 +3440,17 @@ a:focus {
     line-height: 26px;
     font-weight: 600;
     transition: var(--transition);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--toolbar-button-border-color);
     background-color: var(--toolbar-button-bg-color);
     color: var(--toolbar-button-text-color);
 }
 
 .toolbar-def-btn:hover {
-    transform: scale(0.95);
+    background-color: var(--toolbar-button-bg-hover-color);
+    border-color: var(--toolbar-button-border-hover-color);
+    color: var(--toolbar-button-text-hover-color);
 }
 
 .toolbar-oflow-btn {
@@ -3528,8 +3537,12 @@ a:focus {
 .toolbar-theme-1 {
     --toolbar-header-bg-color: #fc8d45;
     --toolbar-header-text-color: #ffffff;
-    --toolbar-button-bg-color: #ffffff;
-    --toolbar-button-text-color: #024756;
+    --toolbar-button-bg-color: transparent;
+    --toolbar-button-border-color: #ffffff;
+    --toolbar-button-text-color: #ffffff;
+    --toolbar-button-bg-hover-color: #ffffff;
+    --toolbar-button-border-hover-color: #ffffff;
+    --toolbar-button-text-hover-color: #024756;
     --toolbar-social-color: #014655;
     --toolbar-logo-bg-color: #ffffff;
 }
@@ -3544,7 +3557,11 @@ a:focus {
     --toolbar-header-bg-color: #ff6b6b;
     --toolbar-header-text-color: #ffffff;
     --toolbar-button-bg-color: #1a535c;
+    --toolbar-button-border-color: #1a535c;
     --toolbar-button-text-color: #ffffff;
+    --toolbar-button-bg-hover-color: #ff6b6b;
+    --toolbar-button-border-hover-color: #ff6b6b;
+    --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #ffd169;
     --toolbar-logo-bg-color: #ff6b6b;
 }
@@ -3559,7 +3576,11 @@ a:focus {
     --toolbar-header-bg-color: #fd9921;
     --toolbar-header-text-color: #ffffff;
     --toolbar-button-bg-color: #fc5b25;
+    --toolbar-button-border-color: #fc5b25;
     --toolbar-button-text-color: #ffffff;
+    --toolbar-button-bg-hover-color: #18a795;
+    --toolbar-button-border-hover-color: #18a795;
+    --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #18a795;
     --toolbar-logo-bg-color: #ffffff;
 }
@@ -3574,7 +3595,11 @@ a:focus {
     --toolbar-header-bg-color: #182a38;
     --toolbar-header-text-color: #ffffff;
     --toolbar-button-bg-color: #ffffff;
+    --toolbar-button-border-color: #ffffff;
     --toolbar-button-text-color: #182a38;
+    --toolbar-button-bg-hover-color: transparent;
+    --toolbar-button-border-hover-color: #ffffff;
+    --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #80a2ab;
     --toolbar-logo-bg-color: #ffffff;
 }
