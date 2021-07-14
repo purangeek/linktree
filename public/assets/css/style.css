@@ -2599,16 +2599,27 @@ a:focus {
 
 .theme-box {
     box-shadow: var(--box-shadow);
-    background: var(--white-color);
+    background-color: var(--white-color);
     border-radius: 8px;
     min-height: 280px;
     margin-bottom: 30px;
+    position: relative;
+    cursor: pointer;
 }
 
 
-/* .theme-box.active {
-    background: var(--green-color);
-} */
+.theme-box.active:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid var(--dark-color);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
 
 .tab-sub-title {
     margin-bottom: 15px;
@@ -3094,7 +3105,7 @@ a:focus {
 
 /*==========Preview Themes 1 CSS Start==========*/
 
-@media (min-width: 576px) {
+@media (min-width: 401px) {
     .preview_img_theme_1_back {
         background-image: url('../images/preview_img_theme_1_des.jpg') !important;
     }
@@ -3437,7 +3448,7 @@ a:focus {
     line-height: 26px;
     font-weight: 600;
     transition: var(--transition);
-    background: var(--toolbar-button-bg-color);
+    background-color: var(--toolbar-button-bg-color);
     color: var(--toolbar-button-text-color);
 }
 
@@ -3527,7 +3538,7 @@ a:focus {
 /* --- Theme 1 Start--- */
 
 .toolbar-theme-1 {
-    --toolbar-header-bg-color: #d46038;
+    --toolbar-header-bg-color: #fc8d45;
     --toolbar-header-text-color: #ffffff;
     --toolbar-button-bg-color: #ffffff;
     --toolbar-button-text-color: #024756;
@@ -3542,12 +3553,12 @@ a:focus {
 /* --- Theme 2 Start--- */
 
 .toolbar-theme-2 {
-    --toolbar-header-bg-color: #fd9921;
+    --toolbar-header-bg-color: #ff6b6b;
     --toolbar-header-text-color: #ffffff;
-    --toolbar-button-bg-color: #fc5b25;
+    --toolbar-button-bg-color: #1a535c;
     --toolbar-button-text-color: #ffffff;
-    --toolbar-social-color: #18a795;
-    --toolbar-logo-bg-color: #ffffff;
+    --toolbar-social-color: #ffd169;
+    --toolbar-logo-bg-color: #ff6b6b;
 }
 
 
@@ -3571,15 +3582,58 @@ a:focus {
 /* --- Theme 4 Start--- */
 
 .toolbar-theme-4 {
-    --toolbar-header-bg-color: red;
+    --toolbar-header-bg-color: #182a38;
     --toolbar-header-text-color: #ffffff;
-    --toolbar-button-bg-color: red;
-    --toolbar-button-text-color: #ffffff;
-    --toolbar-social-color: #000;
+    --toolbar-button-bg-color: #ffffff;
+    --toolbar-button-text-color: #182a38;
+    --toolbar-social-color: #80a2ab;
+    --toolbar-logo-bg-color: #ffffff;
 }
 
 
 /* --- Theme 4 End--- */
+
+/* --- Theme 5 Start--- */
+
+.toolbar-theme-5 {
+    --toolbar-header-bg-color: #fe514c;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-bg-color: #ffffff;
+    --toolbar-button-text-color: #1e1626;
+    --toolbar-social-color: #fe514c;
+    --toolbar-logo-bg-color: #ffffff;
+}
+
+
+/* --- Theme 5 End--- */
+
+/* --- Theme 6 Start--- */
+
+.toolbar-theme-6 {
+    --toolbar-header-bg-color: #ffffff;
+    --toolbar-header-text-color: #0e1316;
+    --toolbar-button-bg-color: #434d4e;
+    --toolbar-button-text-color: #ffffff;
+    --toolbar-social-color: #ffffff;
+    --toolbar-logo-bg-color: #ffffff;
+}
+
+
+/* --- Theme 6 End--- */
+
+/* --- Theme 7 Start--- */
+
+.toolbar-theme-7 {
+    --toolbar-header-bg-color: #ffffff;
+    --toolbar-header-text-color: #3d3d3d;
+    --toolbar-button-bg-color: #3d3d3d;
+    --toolbar-button-text-color: #ffffff;
+    --toolbar-social-color: #3d3d3d;
+    --toolbar-logo-bg-color: #ffffff;
+}
+
+
+/* --- Theme 7 End--- */
 
 
 /*==========Toolbar Themes CSS End==========*/
@@ -3590,7 +3644,7 @@ a:focus {
 .page-view-section {
     min-height: 100vh;
     height: 100%;
-    padding: 50px 15px;
+    padding: 50px 0;
     position: relative;
     display: flex;
     flex-flow: column;
