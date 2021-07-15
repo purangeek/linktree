@@ -3668,6 +3668,25 @@ a:focus {
 /* --- Theme 7 End--- */
 
 
+/* --- Theme 8 Start--- */
+
+.toolbar-theme-8 {
+    --toolbar-header-bg-color: #d19300;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-bg-color: transparent;
+    --toolbar-button-border-color: #ffffff;
+    --toolbar-button-text-color: #ffffff;
+    --toolbar-button-bg-hover-color: #d19300;
+    --toolbar-button-border-hover-color: #d19300;
+    --toolbar-button-text-hover-color: #ffffff;
+    --toolbar-social-color: #d19300;
+    --toolbar-logo-bg-color: #ffffff;
+}
+
+
+/* --- Theme 8 End--- */
+
+
 /*==========Toolbar Themes CSS End==========*/
 
 
@@ -3722,6 +3741,9 @@ a:focus {
     }
     .preview_img_theme_7_back {
         background-image: url('../images/preview_img_theme_7_des.jpg') !important;
+    }
+    .preview_img_theme_8_back {
+        background-image: url('../images/preview_img_theme_8_des.jpg') !important;
     }
 }
 
