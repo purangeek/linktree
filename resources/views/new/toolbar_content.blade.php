@@ -1,4 +1,4 @@
-<div class="toolbar-mf-theme-default toolbar-theme-4">
+<div class="toolbar-mf-theme-default toolbar-theme-7">
     <div class="toolbar-mf-box">
         <div class="toolbar-mf-header">
             <div class="toolbar-mf-prof-image back-img" style="background-image: url({{ asset('assets/images/default-profile-picture.png') }});"></div>
@@ -12,7 +12,7 @@
         <div class="toolbar-mf-button-group">
             <ul>
                 <li>
-                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-btn-img-wp">
+                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-theme-btn toolbar-btn-img-wp">
                         <span>Button</span>
                         <div class="toolbar-btn-img">
                             <img src="{{ asset('assets/images/default-profile-picture.png') }}" alt="default-profile-picture">
@@ -21,13 +21,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn"><span>Button</span></a>
+                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-theme-btn"><span>Button</span></a>
                 </li>
                 <li>
-                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn"><span>Button</span></a>
+                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-theme-btn"><span>Button</span></a>
                 </li>
                 <li>
-                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn"><span>Button</span></a>
+                    <a href="#" class="toolbar-def-btn toolbar-oflow-btn toolbar-theme-btn"><span>Button</span></a>
                 </li>
             </ul>
         </div>

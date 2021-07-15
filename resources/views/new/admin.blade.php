@@ -280,7 +280,7 @@
                                                                         </div>
                                                                         <div class="fSmszX change-link-val">
                                                                             <button type="button" class="hLcPlL">
-                                                                                <p class="dAmNHn link-input-val">link title</p>
+                                                                                <p class="dAmNHn link-input-val">Link Title</p>
                                                                             </button>
                                                                             <div class="eQIJpy">
                                                                                 <button type="button" class="hmsSkt">
@@ -301,7 +301,7 @@
                                                                         </div>
                                                                         <div class="fSmszX change-link-val">
                                                                             <button type="button" class="hLcPlL">
-                                                                                <p class="iwtTzU link-input-val">link name</p>
+                                                                                <p class="iwtTzU link-input-val">Link Url</p>
                                                                             </button>
                                                                             <div class="eQIJpy">
                                                                                 <button type="button" class="hmsSkt">
@@ -391,7 +391,7 @@
                                                                         </div>
                                                                         <div class="fSmszX change-link-val">
                                                                             <button type="button" class="hLcPlL">
-                                                                                <p class="dAmNHn link-input-val">Link Name</p>
+                                                                                <p class="dAmNHn link-input-val">Header Title</p>
                                                                             </button>
                                                                             <div class="eQIJpy">
                                                                                 <button type="button" class="hmsSkt">
