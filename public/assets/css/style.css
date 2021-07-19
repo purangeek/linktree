@@ -3751,6 +3751,27 @@ a:focus {
 /* --- Theme 10 End--- */
 
 
+/* --- Theme 11 Start--- */
+
+.toolbar-theme-11 {
+    --toolbar-header-bg-color: #282f37;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 10px;
+    --toolbar-button-bg-color: transparent;
+    --toolbar-button-border-color: #282f37;
+    --toolbar-button-text-color: #282f37;
+    --toolbar-button-border-radius-hover: 0;
+    --toolbar-button-bg-hover-color: #282f37;
+    --toolbar-button-border-hover-color: #282f37;
+    --toolbar-button-text-hover-color: #ffffff;
+    --toolbar-social-color: #282f37;
+    --toolbar-logo-bg-color: #ffffff;
+}
+
+
+/* --- Theme 11 End--- */
+
+
 /*==========Toolbar Themes CSS End==========*/
 
 
@@ -3814,6 +3835,9 @@ a:focus {
     }
     .preview_img_theme_10_back {
         background-image: url('../images/preview_img_theme_10_des.jpg') !important;
+    }
+    .preview_img_theme_11_back {
+        background-image: url('../images/preview_img_theme_11_des.jpg') !important;
     }
 }
 
