@@ -1169,9 +1169,11 @@ h6 {
     /* Theme Root Start */
     --toolbar-header-bg-color: #ffffff;
     --toolbar-header-text-color: #282f37;
+    --toolbar-button-border-radius: 0px;
     --toolbar-button-bg-color: #ffffff;
     --toolbar-button-border-color: #ffffff;
     --toolbar-button-text-color: #282f37;
+    --toolbar-button-border-radius-hover: 0px;
     --toolbar-button-bg-hover-color: transparent;
     --toolbar-button-border-hover-color: #ffffff;
     --toolbar-button-text-hover-color: #ffffff;
@@ -3446,14 +3448,18 @@ a:focus {
     border-width: 2px;
     border-style: solid;
     border-color: var(--toolbar-button-border-color);
-    background-color: var(--toolbar-button-bg-color);
+    background: var(--toolbar-button-bg-color);
     color: var(--toolbar-button-text-color);
+    background-repeat: no-repeat;
+    border-radius: var(--toolbar-button-border-radius);
 }
 
 .toolbar-theme-btn:hover {
-    background-color: var(--toolbar-button-bg-hover-color);
+    background: var(--toolbar-button-bg-hover-color);
     border-color: var(--toolbar-button-border-hover-color);
     color: var(--toolbar-button-text-hover-color);
+    background-repeat: no-repeat;
+    border-radius: var(--toolbar-button-border-radius-hover);
 }
 
 .toolbar-oflow-btn {
@@ -3540,9 +3546,11 @@ a:focus {
 .toolbar-theme-1 {
     --toolbar-header-bg-color: #fc8d45;
     --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 0px;
     --toolbar-button-bg-color: transparent;
     --toolbar-button-border-color: #ffffff;
     --toolbar-button-text-color: #ffffff;
+    --toolbar-button-border-radius-hover: 0px;
     --toolbar-button-bg-hover-color: #ffffff;
     --toolbar-button-border-hover-color: #ffffff;
     --toolbar-button-text-hover-color: #024756;
@@ -3559,9 +3567,11 @@ a:focus {
 .toolbar-theme-2 {
     --toolbar-header-bg-color: #ff6b6b;
     --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 0px;
     --toolbar-button-bg-color: #1a535c;
     --toolbar-button-border-color: #1a535c;
     --toolbar-button-text-color: #ffffff;
+    --toolbar-button-border-radius-hover: 0px;
     --toolbar-button-bg-hover-color: #ffd169;
     --toolbar-button-border-hover-color: #ffd169;
     --toolbar-button-text-hover-color: #ffffff;
@@ -3578,9 +3588,11 @@ a:focus {
 .toolbar-theme-3 {
     --toolbar-header-bg-color: #fd9921;
     --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 0px;
     --toolbar-button-bg-color: #fc5b25;
     --toolbar-button-border-color: #fc5b25;
     --toolbar-button-text-color: #ffffff;
+    --toolbar-button-border-radius-hover: 0px;
     --toolbar-button-bg-hover-color: #18a795;
     --toolbar-button-border-hover-color: #18a795;
     --toolbar-button-text-hover-color: #ffffff;
@@ -3597,9 +3609,11 @@ a:focus {
 .toolbar-theme-4 {
     --toolbar-header-bg-color: #182a38;
     --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 0px;
     --toolbar-button-bg-color: #ffffff;
     --toolbar-button-border-color: #ffffff;
     --toolbar-button-text-color: #182a38;
+    --toolbar-button-border-radius-hover: 0px;
     --toolbar-button-bg-hover-color: transparent;
     --toolbar-button-border-hover-color: #ffffff;
     --toolbar-button-text-hover-color: #ffffff;
@@ -3616,9 +3630,11 @@ a:focus {
 .toolbar-theme-5 {
     --toolbar-header-bg-color: #fe514c;
     --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 0px;
     --toolbar-button-bg-color: #ffffff;
     --toolbar-button-border-color: #ffffff;
     --toolbar-button-text-color: #1e1626;
+    --toolbar-button-border-radius-hover: 0px;
     --toolbar-button-bg-hover-color: transparent;
     --toolbar-button-border-hover-color: #ffffff;
     --toolbar-button-text-hover-color: #ffffff;
@@ -3635,9 +3651,11 @@ a:focus {
 .toolbar-theme-6 {
     --toolbar-header-bg-color: #ffffff;
     --toolbar-header-text-color: #434d4e;
+    --toolbar-button-border-radius: 0px;
     --toolbar-button-bg-color: #434d4e;
     --toolbar-button-border-color: #434d4e;
     --toolbar-button-text-color: #ffffff;
+    --toolbar-button-border-radius-hover: 0px;
     --toolbar-button-bg-hover-color: transparent;
     --toolbar-button-border-hover-color: #ffffff;
     --toolbar-button-text-hover-color: #ffffff;
@@ -3654,9 +3672,11 @@ a:focus {
 .toolbar-theme-7 {
     --toolbar-header-bg-color: #3d3d3d;
     --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 0px;
     --toolbar-button-bg-color: transparent;
     --toolbar-button-border-color: #3d3d3d;
     --toolbar-button-text-color: #3d3d3d;
+    --toolbar-button-border-radius-hover: 0px;
     --toolbar-button-bg-hover-color: #3d3d3d;
     --toolbar-button-border-hover-color: #3d3d3d;
     --toolbar-button-text-hover-color: #ffffff;
@@ -3673,9 +3693,11 @@ a:focus {
 .toolbar-theme-8 {
     --toolbar-header-bg-color: #d19300;
     --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 0px;
     --toolbar-button-bg-color: transparent;
     --toolbar-button-border-color: #ffffff;
     --toolbar-button-text-color: #ffffff;
+    --toolbar-button-border-radius-hover: 0px;
     --toolbar-button-bg-hover-color: #d19300;
     --toolbar-button-border-hover-color: #d19300;
     --toolbar-button-text-hover-color: #ffffff;
@@ -3685,6 +3707,48 @@ a:focus {
 
 
 /* --- Theme 8 End--- */
+
+
+/* --- Theme 9 Start--- */
+
+.toolbar-theme-9 {
+    --toolbar-header-bg-color: #f6a223;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 10px;
+    --toolbar-button-bg-color: #ffffff;
+    --toolbar-button-border-color: #ffffff;
+    --toolbar-button-text-color: #851295;
+    --toolbar-button-border-radius-hover: 10px;
+    --toolbar-button-bg-hover-color: #f6a223;
+    --toolbar-button-border-hover-color: #f6a223;
+    --toolbar-button-text-hover-color: #ffffff;
+    --toolbar-social-color: #f6a223;
+    --toolbar-logo-bg-color: #ffffff;
+}
+
+
+/* --- Theme 9 End--- */
+
+
+/* --- Theme 10 Start--- */
+
+.toolbar-theme-10 {
+    --toolbar-header-bg-color: #ffffff;
+    --toolbar-header-text-color: #9ee1fe;
+    --toolbar-button-border-radius: 10px;
+    --toolbar-button-bg-color: #9ee1fe;
+    --toolbar-button-border-color: #9ee1fe;
+    --toolbar-button-text-color: #ffffff;
+    --toolbar-button-border-radius-hover: 10px;
+    --toolbar-button-bg-hover-color: #9ee1fe;
+    --toolbar-button-border-hover-color: #ffffff;
+    --toolbar-button-text-hover-color: #ffffff;
+    --toolbar-social-color: #9ee1fe;
+    --toolbar-logo-bg-color: #ffffff;
+}
+
+
+/* --- Theme 10 End--- */
 
 
 /*==========Toolbar Themes CSS End==========*/
@@ -3744,6 +3808,12 @@ a:focus {
     }
     .preview_img_theme_8_back {
         background-image: url('../images/preview_img_theme_8_des.jpg') !important;
+    }
+    .preview_img_theme_9_back {
+        background-image: url('../images/preview_img_theme_9_des.jpg') !important;
+    }
+    .preview_img_theme_10_back {
+        background-image: url('../images/preview_img_theme_10_des.jpg') !important;
     }
 }
 
