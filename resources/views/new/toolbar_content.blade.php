@@ -1,4 +1,4 @@
-<div class="toolbar-mf-theme-default toolbar-theme-2">
+<div class="toolbar-mf-theme-default toolbar-theme-8">
     <div class="toolbar-mf-box">
         <div class="toolbar-mf-header">
             <div class="toolbar-mf-prof-image back-img" style="background-image: url({{ asset('assets/images/default-profile-picture.png') }});"></div>
