@@ -14,8 +14,7 @@
         </div>
     </div>
     <div class="toolbar-content-box">
-        <div class="toolbar-mobile-frame back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_11_mob.jpg') }});">
-        <!-- <div class="toolbar-mobile-frame back-img" style="background-image: linear-gradient(to bottom, #0f2027, #162c35, #1d3944, #244654, #2c5364);"> -->
+        <div class="toolbar-mobile-frame back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_6_mob.jpg') }});">
             <div class="toolbar-mobile-frame-inr">
                 @include('new.toolbar_content')
             </div>

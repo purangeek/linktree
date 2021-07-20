@@ -4,7 +4,7 @@
 <div class="body-wp">
 
     <section class="page-view-section">
-        <div class="toolbar-mf-bg preview_img_theme_11_back back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_11_mob.jpg') }});"></div>
+        <div class="toolbar-mf-bg preview_img_theme_6_back back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_6_mob.jpg') }});"></div>
         <div class="sec-wp">
             <div class="container">
                 <div class="row">

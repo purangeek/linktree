@@ -1178,6 +1178,8 @@ h6 {
     --toolbar-button-border-hover-color: #ffffff;
     --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #ffffff;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
     --toolbar-logo-bg-color: #ffffff;
     /* Theme Root End */
 }
@@ -3494,6 +3496,8 @@ a:focus {
     justify-content: center;
     transition: var(--transition);
     color: var(--toolbar-social-color);
+    background: var(--toolbar-social-bg-color);
+    border-radius: var(--toolbar-social-border-radius);
 }
 
 .toolbar-mf-social-group ul li a:hover {
@@ -3555,6 +3559,8 @@ a:focus {
     --toolbar-button-border-hover-color: #ffffff;
     --toolbar-button-text-hover-color: #024756;
     --toolbar-social-color: #014655;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
     --toolbar-logo-bg-color: #ffffff;
 }
 
@@ -3576,6 +3582,8 @@ a:focus {
     --toolbar-button-border-hover-color: #ffd169;
     --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #ffd169;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
     --toolbar-logo-bg-color: #ff6b6b;
 }
 
@@ -3597,6 +3605,8 @@ a:focus {
     --toolbar-button-border-hover-color: #18a795;
     --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #18a795;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
     --toolbar-logo-bg-color: #ffffff;
 }
 
@@ -3618,6 +3628,8 @@ a:focus {
     --toolbar-button-border-hover-color: #ffffff;
     --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #ffffff;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
     --toolbar-logo-bg-color: #ffffff;
 }
 
@@ -3639,6 +3651,8 @@ a:focus {
     --toolbar-button-border-hover-color: #ffffff;
     --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #fe514c;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
     --toolbar-logo-bg-color: #ffffff;
 }
 
@@ -3649,17 +3663,19 @@ a:focus {
 /* --- Theme 6 Start--- */
 
 .toolbar-theme-6 {
-    --toolbar-header-bg-color: #ffffff;
-    --toolbar-header-text-color: #434d4e;
-    --toolbar-button-border-radius: 0px;
-    --toolbar-button-bg-color: #434d4e;
-    --toolbar-button-border-color: #434d4e;
+    --toolbar-header-bg-color: #000000;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 10px;
+    --toolbar-button-bg-color: transparent;
+    --toolbar-button-border-color: #ffffff;
     --toolbar-button-text-color: #ffffff;
     --toolbar-button-border-radius-hover: 0px;
-    --toolbar-button-bg-hover-color: transparent;
+    --toolbar-button-bg-hover-color: #ffffff;
     --toolbar-button-border-hover-color: #ffffff;
-    --toolbar-button-text-hover-color: #ffffff;
-    --toolbar-social-color: #ffffff;
+    --toolbar-button-text-hover-color: #d0400f;
+    --toolbar-social-color: #f9c12f;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
     --toolbar-logo-bg-color: #ffffff;
 }
 
@@ -3670,18 +3686,20 @@ a:focus {
 /* --- Theme 7 Start--- */
 
 .toolbar-theme-7 {
-    --toolbar-header-bg-color: #3d3d3d;
-    --toolbar-header-text-color: #ffffff;
-    --toolbar-button-border-radius: 0px;
-    --toolbar-button-bg-color: transparent;
-    --toolbar-button-border-color: #3d3d3d;
-    --toolbar-button-text-color: #3d3d3d;
-    --toolbar-button-border-radius-hover: 0px;
-    --toolbar-button-bg-hover-color: #3d3d3d;
-    --toolbar-button-border-hover-color: #3d3d3d;
-    --toolbar-button-text-hover-color: #ffffff;
-    --toolbar-social-color: #3d3d3d;
-    --toolbar-logo-bg-color: #0fca93;
+    --toolbar-header-bg-color: #8abeba;
+    --toolbar-header-text-color: #13243e;
+    --toolbar-button-border-radius: 30px;
+    --toolbar-button-bg-color: #13243e;
+    --toolbar-button-border-color: #d9b175;
+    --toolbar-button-text-color: #d9b175;
+    --toolbar-button-border-radius-hover: 20px;
+    --toolbar-button-bg-hover-color: #d9b175;
+    --toolbar-button-border-hover-color: #d9b175;
+    --toolbar-button-text-hover-color: #13243e;
+    --toolbar-social-color: #9977b2;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
+    --toolbar-logo-bg-color: #d7ac42;
 }
 
 
@@ -3702,6 +3720,8 @@ a:focus {
     --toolbar-button-border-hover-color: #d19300;
     --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #d19300;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
     --toolbar-logo-bg-color: #ffffff;
 }
 
@@ -3723,6 +3743,8 @@ a:focus {
     --toolbar-button-border-hover-color: #f6a223;
     --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #f6a223;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
     --toolbar-logo-bg-color: #ffffff;
 }
 
@@ -3744,6 +3766,8 @@ a:focus {
     --toolbar-button-border-hover-color: #ffffff;
     --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #9ee1fe;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
     --toolbar-logo-bg-color: #ffffff;
 }
 
@@ -3757,7 +3781,7 @@ a:focus {
     --toolbar-header-bg-color: #282f37;
     --toolbar-header-text-color: #ffffff;
     --toolbar-button-border-radius: 10px;
-    --toolbar-button-bg-color: transparent;
+    --toolbar-button-bg-color: #fefefe;
     --toolbar-button-border-color: #282f37;
     --toolbar-button-text-color: #282f37;
     --toolbar-button-border-radius-hover: 0;
@@ -3765,11 +3789,59 @@ a:focus {
     --toolbar-button-border-hover-color: #282f37;
     --toolbar-button-text-hover-color: #ffffff;
     --toolbar-social-color: #282f37;
+    --toolbar-social-bg-color: #f9f9f9;
+    --toolbar-social-border-radius: 7px;
     --toolbar-logo-bg-color: #ffffff;
 }
 
 
 /* --- Theme 11 End--- */
+
+
+/* --- Theme 12 Start--- */
+
+.toolbar-theme-12 {
+    --toolbar-header-bg-color: #fcef4c;
+    --toolbar-header-text-color: #017ccc;
+    --toolbar-button-border-radius: 0;
+    --toolbar-button-bg-color: #017ccc;
+    --toolbar-button-border-color: #017ccc;
+    --toolbar-button-text-color: #fcef4c;
+    --toolbar-button-border-radius-hover: 10px;
+    --toolbar-button-bg-hover-color: #fcef4c;
+    --toolbar-button-border-hover-color: #fcef4c;
+    --toolbar-button-text-hover-color: #017ccc;
+    --toolbar-social-color: #fcef4c;
+    --toolbar-social-bg-color: transparent;
+    --toolbar-social-border-radius: 0;
+    --toolbar-logo-bg-color: #fcef4c;
+}
+
+
+/* --- Theme 12 End--- */
+
+
+/* --- Theme 13 Start--- */
+
+.toolbar-theme-13 {
+    --toolbar-header-bg-color: #5eb749;
+    --toolbar-header-text-color: #ffffff;
+    --toolbar-button-border-radius: 30px;
+    --toolbar-button-bg-color: #ffffff;
+    --toolbar-button-border-color: #ffffff;
+    --toolbar-button-text-color: #5eb749;
+    --toolbar-button-border-radius-hover: 20px;
+    --toolbar-button-bg-hover-color: #5eb749;
+    --toolbar-button-border-hover-color: #5eb749;
+    --toolbar-button-text-hover-color: #ffffff;
+    --toolbar-social-color: #5eb749;
+    --toolbar-social-bg-color: #ffffff;
+    --toolbar-social-border-radius: 7px;
+    --toolbar-logo-bg-color: #ffffff;
+}
+
+
+/* --- Theme 13 End--- */
 
 
 /*==========Toolbar Themes CSS End==========*/
@@ -3838,6 +3910,12 @@ a:focus {
     }
     .preview_img_theme_11_back {
         background-image: url('../images/preview_img_theme_11_des.jpg') !important;
+    }
+    .preview_img_theme_12_back {
+        background-image: url('../images/preview_img_theme_12_des.jpg') !important;
+    }
+    .preview_img_theme_13_back {
+        background-image: url('../images/preview_img_theme_13_des.jpg') !important;
     }
 }
 
