@@ -104,7 +104,7 @@ $(document).ready(function() {
     });
     // Search Bar JS End
 
-
+    // Main Tab JS Start
     $(".main-tab").click(function() {
         $(".main-tab").removeClass('tab-active');
         $(this).addClass('tab-active');
@@ -120,5 +120,5 @@ $(document).ready(function() {
         $(".tab-inner-box").hide();
         $(".tab-inner-box." + list_child_tab).show();
     });
-
+    // Main Tab JS End
 });

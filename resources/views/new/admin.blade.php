@@ -531,11 +531,37 @@
                                     <div class="theme-boxes">
                                         <div class="row">
                                             <div class="col-lg-4">
-                                                <div class="theme-box active back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_5_mob.jpg') }});"></div>
+                                                <div class="theme-box">
+                                                    <div class="theme-box-img active back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_1_mob.jpg') }});"></div>
+                                                    <div class="theme-box-content">
+                                                        <p>Food</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col-lg-4">
-                                                <div class="theme-box back-img"></div>
+                                                <div class="theme-box">
+                                                    <div class="theme-box-img back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_2_mob.jpg') }});"></div>
+                                                    <div class="theme-box-content">
+                                                        <p>Food</p>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <div class="col-lg-4">
+                                                <div class="theme-box">
+                                                    <div class="theme-box-img back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_3_mob.jpg') }});"></div>
+                                                    <div class="theme-box-content">
+                                                        <p>Food</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="theme-box">
+                                                    <div class="theme-box-img back-img" style="background-image: url({{ asset('assets/images/preview_img_theme_4_mob.jpg') }});"></div>
+                                                    <div class="theme-box-content">
+                                                        <p>Food</p>
+                                                    </div>
+                                                </div>
+                                            </div>  
                                         </div>
                                     </div>
                                 </div>
@@ -1329,8 +1355,8 @@
             </div>
         </div>
 
-       @include('new.toolbar')
-       
+        @include('new.toolbar')
+
     </div>
 </div>
 

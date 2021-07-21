@@ -1975,6 +1975,7 @@ a:focus {
 
 .action-area-wp::-webkit-scrollbar-track {
     border-right-width: 0;
+    border-top-width: 0;
 }
 
 .action-area-wrap {
@@ -2072,6 +2073,7 @@ a:focus {
 .link-header-wp ul {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .link-header-wp ul li.link-item {
@@ -2082,7 +2084,12 @@ a:focus {
 }
 
 .link-header-wp ul li {
-    margin-right: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.link-header-wp ul li:first-child {
+    margin-left: 0;
 }
 
 .link-header-wp ul li:last-child {
@@ -2606,16 +2613,19 @@ a:focus {
 }
 
 .theme-box {
+    margin-bottom: 30px;
+}
+
+.theme-box-img {
     box-shadow: var(--box-shadow);
     background-color: var(--white-color);
     border-radius: 8px;
     min-height: 280px;
-    margin-bottom: 30px;
     position: relative;
     cursor: pointer;
 }
 
-.theme-box.active:before {
+.theme-box-img.active:before {
     content: '';
     position: absolute;
     top: -5px;
@@ -2625,6 +2635,15 @@ a:focus {
     border: 2px solid var(--dark-color);
     border-radius: 12px;
     transition: var(--transition);
+}
+
+.theme-box-content {
+    padding-top: 8px;
+    text-align: center;
+}
+
+.theme-box-content p {
+    margin: 0;
 }
 
 .tab-sub-title {
@@ -3548,20 +3567,20 @@ a:focus {
 /* --- Theme 1 Start--- */
 
 .toolbar-theme-1 {
-    --toolbar-header-bg-color: #fc8d45;
+    --toolbar-header-bg-color: #ff6a24;
     --toolbar-header-text-color: #ffffff;
-    --toolbar-button-border-radius: 0px;
+    --toolbar-button-border-radius: 30px;
     --toolbar-button-bg-color: transparent;
-    --toolbar-button-border-color: #ffffff;
+    --toolbar-button-border-color: #a1b673;
     --toolbar-button-text-color: #ffffff;
-    --toolbar-button-border-radius-hover: 0px;
-    --toolbar-button-bg-hover-color: #ffffff;
-    --toolbar-button-border-hover-color: #ffffff;
-    --toolbar-button-text-hover-color: #024756;
-    --toolbar-social-color: #014655;
+    --toolbar-button-border-radius-hover: 30px;
+    --toolbar-button-bg-hover-color: #496911;
+    --toolbar-button-border-hover-color: #496911;
+    --toolbar-button-text-hover-color: #ffffff;
+    --toolbar-social-color: #f9b112;
     --toolbar-social-bg-color: transparent;
     --toolbar-social-border-radius: 0;
-    --toolbar-logo-bg-color: #ffffff;
+    --toolbar-logo-bg-color: #f8f0da;
 }
 
 
@@ -3617,20 +3636,20 @@ a:focus {
 /* --- Theme 4 Start--- */
 
 .toolbar-theme-4 {
-    --toolbar-header-bg-color: #182a38;
+    --toolbar-header-bg-color: #ff7779;
     --toolbar-header-text-color: #ffffff;
-    --toolbar-button-border-radius: 0px;
-    --toolbar-button-bg-color: #ffffff;
-    --toolbar-button-border-color: #ffffff;
-    --toolbar-button-text-color: #182a38;
-    --toolbar-button-border-radius-hover: 0px;
-    --toolbar-button-bg-hover-color: transparent;
-    --toolbar-button-border-hover-color: #ffffff;
+    --toolbar-button-border-radius: 10px;
+    --toolbar-button-bg-color: #ffeaec;
+    --toolbar-button-border-color: #ff6e6f;
+    --toolbar-button-text-color: #ff6e6f;
+    --toolbar-button-border-radius-hover: 10px;
+    --toolbar-button-bg-hover-color: #ff7779;
+    --toolbar-button-border-hover-color: #ff7779;
     --toolbar-button-text-hover-color: #ffffff;
-    --toolbar-social-color: #ffffff;
+    --toolbar-social-color: #ff3c40;
     --toolbar-social-bg-color: transparent;
     --toolbar-social-border-radius: 0;
-    --toolbar-logo-bg-color: #ffffff;
+    --toolbar-logo-bg-color: #ff3c40;
 }
 
 
@@ -3669,10 +3688,10 @@ a:focus {
     --toolbar-button-bg-color: transparent;
     --toolbar-button-border-color: #ffffff;
     --toolbar-button-text-color: #ffffff;
-    --toolbar-button-border-radius-hover: 0px;
+    --toolbar-button-border-radius-hover: 10px;
     --toolbar-button-bg-hover-color: #ffffff;
     --toolbar-button-border-hover-color: #ffffff;
-    --toolbar-button-text-hover-color: #d0400f;
+    --toolbar-button-text-hover-color: #29383b;
     --toolbar-social-color: #f9c12f;
     --toolbar-social-bg-color: transparent;
     --toolbar-social-border-radius: 0;
@@ -3692,7 +3711,7 @@ a:focus {
     --toolbar-button-bg-color: #13243e;
     --toolbar-button-border-color: #d9b175;
     --toolbar-button-text-color: #d9b175;
-    --toolbar-button-border-radius-hover: 20px;
+    --toolbar-button-border-radius-hover: 30px;
     --toolbar-button-bg-hover-color: #d9b175;
     --toolbar-button-border-hover-color: #d9b175;
     --toolbar-button-text-hover-color: #13243e;
@@ -3784,7 +3803,7 @@ a:focus {
     --toolbar-button-bg-color: #fefefe;
     --toolbar-button-border-color: #282f37;
     --toolbar-button-text-color: #282f37;
-    --toolbar-button-border-radius-hover: 0;
+    --toolbar-button-border-radius-hover: 10px;
     --toolbar-button-bg-hover-color: #282f37;
     --toolbar-button-border-hover-color: #282f37;
     --toolbar-button-text-hover-color: #ffffff;
@@ -3830,7 +3849,7 @@ a:focus {
     --toolbar-button-bg-color: #ffffff;
     --toolbar-button-border-color: #ffffff;
     --toolbar-button-text-color: #5eb749;
-    --toolbar-button-border-radius-hover: 20px;
+    --toolbar-button-border-radius-hover: 30px;
     --toolbar-button-bg-hover-color: #5eb749;
     --toolbar-button-border-hover-color: #5eb749;
     --toolbar-button-text-hover-color: #ffffff;
